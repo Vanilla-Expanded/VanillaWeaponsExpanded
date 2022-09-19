@@ -17,22 +17,7 @@
 		<combatLogRules>Damage_Extinguish</combatLogRules>
 	</DamageDef>
 
-	<!-- Damage -->
-	<DamageDef>
-		<defName>VWE_ToxicGas</defName>
-		<!-- independent -->
-		<label>ARL_ToxicGas</label>
-		<workerClass>OPToxic.DamageWorker_OPToxic</workerClass>
-		<canInterruptJobs>false</canInterruptJobs>
-		<makesBlood>false</makesBlood>
-		<defaultDamage>0</defaultDamage>
-		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
-		<explosionColorEdge>(134,144,22,0.05)</explosionColorEdge>
-		<soundExplosion>Explosion_Stun</soundExplosion>
-		<harmsHealth>false</harmsHealth>
-		<combatLogRules>Damage_Extinguish</combatLogRules>
-	</DamageDef>
-
+	
 
 
 </Defs>
