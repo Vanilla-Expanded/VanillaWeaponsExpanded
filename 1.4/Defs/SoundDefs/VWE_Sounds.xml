@@ -31,8 +31,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_Flamethrower</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_Flamethrower</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -55,8 +55,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_Flamethrower</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_Flamethrower</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -79,8 +79,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_FireExtinguisher</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_FireExtinguisher</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -103,8 +103,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_FireExtinguisher</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_FireExtinguisher</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -245,8 +245,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_LeverActionRifle</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_LeverActionRifle</clipPath>
           </li>
         </grains>      
         <pitchRange>
@@ -313,8 +313,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_HMG</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_HMG</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -387,8 +387,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_ChargeSniperRifle</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_ChargeSniperRifle</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -408,8 +408,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_AntiMaterialRifle</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_AntiMaterialRifle</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -454,8 +454,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_ChargeShotgun</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_ChargeShotgun</clipPath>
           </li>
         </grains>      
         <pitchRange>
@@ -495,8 +495,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_ChargeMinigun</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_ChargeMinigun</clipPath>
           </li>
         </grains>      
         <pitchRange>
@@ -516,8 +516,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_SemiAutoRifle</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_SemiAutoRifle</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -541,8 +541,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_MarksmanRifle</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VWE_Shot_MarksmanRifle</clipPath>
           </li>
         </grains>      
         <volumeRange>
