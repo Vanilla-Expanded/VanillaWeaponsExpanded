@@ -125,10 +125,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.21</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <costStuffCount>110</costStuffCount>
     <statBases>
       <WorkToMake>20000</WorkToMake>

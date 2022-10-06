@@ -476,8 +476,6 @@
 				<explosiveDamageType>Flame</explosiveDamageType>
 				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
 		</li>
-		<li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-		</li>
 	</comps>
     <tools>
       <li>
@@ -967,10 +965,6 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.06</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
 	<soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
 	  <recipeUsers>
@@ -1313,10 +1307,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.32</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>45000</WorkToMake>
@@ -1404,10 +1394,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.34</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>60000</WorkToMake>

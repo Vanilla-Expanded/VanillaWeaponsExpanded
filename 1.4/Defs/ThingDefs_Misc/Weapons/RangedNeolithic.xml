@@ -90,10 +90,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.12</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>Bow_Large</soundInteract>
     <costList>
       <WoodLog>65</WoodLog>

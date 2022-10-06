@@ -89,10 +89,6 @@
 	  <drawSize>1.11</drawSize>
     </graphicData>
     <techLevel>Medieval</techLevel>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>20000</WorkToMake>

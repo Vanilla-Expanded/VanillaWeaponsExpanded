@@ -350,10 +350,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.14</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
       <WorkToMake>50000</WorkToMake>
@@ -441,10 +437,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.22</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
       <WorkToMake>90000</WorkToMake>

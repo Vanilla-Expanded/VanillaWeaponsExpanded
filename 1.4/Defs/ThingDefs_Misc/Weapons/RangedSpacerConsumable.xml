@@ -81,9 +81,6 @@
         <explosiveDamageType>Bomb</explosiveDamageType>
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
       </li>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
     </comps>
   </ThingDef>
   
