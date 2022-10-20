@@ -5,7 +5,7 @@
 		<defName>napoleonBonaparty</defName>
 		<label>Napoleon BonaPARTY</label>
 		<description>Craft 10 Muskets</description>
-		<tab>VanillaExpanded</tab>
+		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ItemCraftTracker">
 			<def>VWE_Gun_Musket</def>
 			<count>10</count>
@@ -19,7 +19,7 @@
 		<defName>poshRockLobber</defName>
 		<label>Posh Rock Lobber</label>
 		<description>Craft jade throwing rocks</description>
-		<tab>VanillaExpanded</tab>
+		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ItemCraftTracker">
 			<def>VWE_Throwing_Rocks</def>
 			<madeFrom>Jade</madeFrom>
@@ -34,7 +34,7 @@
 		<defName>burnThemAll</defName>
 		<label>Burn Them All!</label>
 		<description>Craft a flamethrower</description>
-		<tab>VanillaExpanded</tab>
+		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ItemCraftTracker">
 			<def>VWE_Gun_Flamethrower</def>
 			<count>1</count>
@@ -48,7 +48,7 @@
 		<defName>gunsGallore</defName>
 		<label>Guns Gallore</label>
 		<description>Research Specialized Firearms</description>
-		<tab>VanillaExpanded</tab>
+		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>VWE_SpecializedFirearms</def>
 		</tracker>
@@ -61,7 +61,7 @@
 		<defName>superCharged</defName>
 		<label>Supercharged!</label>
 		<description>Craft a legendary charge minigun</description>
-		<tab>VanillaExpanded</tab>
+		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ItemCraftTracker">
 			<def>VWE_Gun_ChargeMinigun</def>
 			<quality>Legendary</quality>
