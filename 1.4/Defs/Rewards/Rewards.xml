@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<AchievementsExpanded.Reward_EnemyRaid>
-		<defName>EnemyRaidRewardVE</defName>
+		<defName>EnemyRaidRewardVE_WE</defName>
 		<label>Summon A Raid</label>
 		<tab>VanillaExpanded_Weapons</tab>
 		
@@ -10,7 +10,7 @@
 	</AchievementsExpanded.Reward_EnemyRaid>
 	
 	<AchievementsExpanded.Reward_MapIncident>
-		<defName>TradeCaravanRewardVE</defName>
+		<defName>TradeCaravanRewardVE_WE</defName>
 		<label>Summon a Trade Caravan</label>
 		<tab>VanillaExpanded_Weapons</tab>
 		
@@ -19,7 +19,7 @@
 	</AchievementsExpanded.Reward_MapIncident>
 	
 	<AchievementsExpanded.Reward_RandomEvent>
-		<defName>RandomEventRewardVE</defName>
+		<defName>RandomEventRewardVE_WE</defName>
 		<label>Random Event</label>
 		<tab>VanillaExpanded_Weapons</tab>
 		
@@ -27,7 +27,7 @@
 	</AchievementsExpanded.Reward_RandomEvent>
 	
 	<AchievementsExpanded.Reward_MapIncident>
-		<defName>CargoPodsRewardVE</defName>
+		<defName>CargoPodsRewardVE_WE</defName>
 		<label>Spawn Cargo Pods</label>
 		<tab>VanillaExpanded_Weapons</tab>
 		
@@ -45,7 +45,7 @@
 	-->
 	
 	<AchievementsExpanded.Reward_RandomQuestItem>
-		<defName>RandomRewardQuestItemVE</defName>
+		<defName>RandomRewardQuestItemVE_WE</defName>
 		<label>Random Quest Item</label>
 		<tab>VanillaExpanded_Weapons</tab>
 		
@@ -57,7 +57,7 @@
 	</AchievementsExpanded.Reward_RandomQuestItem>
 	
 	<AchievementsExpanded.Reward_MapIncident>
-		<defName>ManInBlackRewardVE</defName>
+		<defName>ManInBlackRewardVE_WE</defName>
 		<label>Man in Black Joins</label>
 		<tab>VanillaExpanded_Weapons</tab>
 		
