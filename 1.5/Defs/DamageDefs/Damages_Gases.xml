@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Damage -->
+
+	<DamageDef>
+		<defName>Dam_OPToxin</defName>
+		<label>Toxic Gas</label>
+		<workerClass>OPToxic.DamageWorker_OPToxic</workerClass>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<harmsHealth>false</harmsHealth>
+		<combatLogRules>Damage_Extinguish</combatLogRules>
+	</DamageDef>
+
+	
+
+
+</Defs>
