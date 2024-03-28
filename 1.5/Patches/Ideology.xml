@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Ideology</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Anything that herit from BaseMakeableGrenade already have Ranged class -->
+        <!-- Anything that herit from BaseMeleeWeapon_Blunt_Quality already have MeleeBlunt class -->
+        <!-- Anything that herit from BaseMeleeWeapon_Sharp_Quality already have MeleePiercer class -->
+        <!-- Anything that herit from BaseWeaponNeolithic already have Neolithic class -->
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Axe"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>Neolithic</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_MarksmanRifle" or defName="VWE_Gun_AntiMaterialRifle" or defName="VWE_Bow_Long" or defName="VWE_Gun_ChargeSniperRifle" or defName="VWE_Gun_ChargeRocketLauncher"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedHeavy</li>
+              <li>LongShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_Flamethrower" or defName="VWE_Gun_FireExtinguisher"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedHeavy</li>
+              <li>ShortShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_LightSMG" or defName="VWE_Throwing_Knives" or defName="VWE_Tool_Whip"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedLight</li>
+              <li>ShortShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+
+        <!-- RangedHeavy-->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeMinigun" or defName="VWE_Gun_ChargeLMG" or defName="VWE_Bow_Compound" or defName="VWE_Bow_Crossbow" or defName="VWE_Gun_HMG" or defName="VWE_Gun_GrenadeLauncher" or defName="VWE_Gun_RocketLauncher"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedHeavy</li>
+            </weaponClasses>
+          </value>
+        </li>
+
+        <!-- RangedLight -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargePistol" or defName="VWE_Gun_Flintlock" or defName="VWE_Gun_HandCannon" or defName="VWE_CombatHandgun"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedLight</li>
+            </weaponClasses>
+          </value>
+        </li>
+
+        <!-- ShortShots < 19.9 range -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeShotgun" or defName="VWE_Throwing_Rocks" or defName="VWE_SawedOffShotgun"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>ShortShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
