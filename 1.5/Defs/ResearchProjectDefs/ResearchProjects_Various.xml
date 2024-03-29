@@ -14,6 +14,16 @@
 		</prerequisites>
   <researchViewX>0.00</researchViewX>
   <researchViewY>0.15</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->precision archery</li>
+    <li>subject_story->refined the craft of longbow making, maximizing range and accuracy</li>
+    <li>subject_story->redefined warfare with the introduction of the sniper's bow</li>
+    <li>subject_story->inspired legends through feats of marksmanship that turned the tide of battles</li>
+    <li>subject_story->developed techniques that allowed rapid, precise shots over great distances</li>
+    <li>subject_gerund->enhancing long-range engagements with traditional craftsmanship</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -28,6 +38,16 @@
 		</prerequisites>
   <researchViewX>1.00</researchViewX>
   <researchViewY>0.15</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->mechanical advantage</li>
+    <li>subject_story->merged the precision of archery with the power of mechanics</li>
+    <li>subject_story->developed crossbows that pierce the defenses of the armored</li>
+    <li>subject_story->innovated locking mechanisms for quicker reloads under pressure</li>
+    <li>subject_story->integrated advanced sighting systems to improve accuracy</li>
+    <li>subject_gerund->advancing siege warfare with innovation in armament</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -42,6 +62,16 @@
 		</prerequisites>
   <researchViewX>1.00</researchViewX>
   <researchViewY>0.70</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->silent efficiency</li>
+    <li>subject_story->integrated modern technology to craft silent, deadly weapons</li>
+    <li>subject_story->pushed the boundaries of archery into the industrial era</li>
+    <li>subject_story->employed advanced materials for unmatched bow strength and flexibility</li>
+    <li>subject_story->optimized designs for ergonomic use and increased firing rates</li>
+    <li>subject_gerund->refining the art of stealth and precision in hunting and warfare</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 
@@ -55,6 +85,16 @@
 		<techLevel>Medieval</techLevel>
   <researchViewX>3.00</researchViewX>
   <researchViewY>0.15</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->the spark of revolution</li>
+    <li>subject_story->unleashed the potential of chemical reactions for explosive results</li>
+    <li>subject_story->transformed warfare and mining with the discovery of gunpowder</li>
+    <li>subject_story->revolutionized siege tactics with the introduction of cannons</li>
+    <li>subject_story->facilitated the creation of small arms, changing personal defense and hunting</li>
+    <li>subject_gerund->pioneering the era of explosives and ballistic weaponry</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -69,6 +109,16 @@
 		</prerequisites>
   <researchViewX>4.00</researchViewX>
   <researchViewY>0.70</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->entrenched defense</li>
+    <li>subject_story->adopted age-old strategies to modern combat, ensuring survival</li>
+    <li>subject_story->innovated in close-quarters battle tactics within the trenches</li>
+    <li>subject_story->engineered fortifications that blend with the landscape for surprise attacks</li>
+    <li>subject_story->developed communication lines within trenches to coordinate assaults</li>
+    <li>subject_gerund->fortifying positions with strategic ingenuity in warfare</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -83,6 +133,16 @@
 		</prerequisites>
   <researchViewX>6.00</researchViewX>
   <researchViewY>0.15</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->the weight of power</li>
+    <li>subject_story->developed weapons that bring unparalleled firepower to the battlefield</li>
+    <li>subject_story->balanced the scales of warfare with heavy, decisive armaments</li>
+    <li>subject_story->created training programs for specialized units to operate these weapons</li>
+    <li>subject_story->engineered mobility solutions to transport and deploy heavy armaments</li>
+    <li>subject_gerund->mastering the art of destruction with heavy weapons</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -97,6 +157,16 @@
 		</prerequisites>
   <researchViewX>4.00</researchViewX>
   <researchViewY>0.15</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->fiery dominion</li>
+    <li>subject_story->harnessed fire in warfare to cleanse and conquer</li>
+    <li>subject_story->introduced a weapon feared for its psychological and physical impact</li>
+    <li>subject_story->innovated with fuel mixtures for longer range and burn times</li>
+    <li>subject_story->developed safety mechanisms to protect the operator from backlash</li>
+    <li>subject_gerund->spreading the flames of innovation and terror on the battlefield</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -111,6 +181,16 @@
 		</prerequisites>
   <researchViewX>6.00</researchViewX>
   <researchViewY>0.75</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->precision engineering</li>
+    <li>subject_story->crafted firearms designed for specific, challenging combat scenarios</li>
+    <li>subject_story->elevated the standards of gunsmithing to meet niche demands</li>
+    <li>subject_story->integrated cutting-edge optics for enhanced targeting accuracy</li>
+    <li>subject_story->customized weapons to suit individual user preferences and tactics</li>
+    <li>subject_gerund->tailoring firepower to the intricate needs of warfare</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -126,6 +206,16 @@
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
   <researchViewX>6.00</researchViewX>
   <researchViewY>1.35</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->long-distance overwatch</li>
+    <li>subject_story->bridged the gap between sniper precision and rifle agility</li>
+    <li>subject_story->empowered sharpshooters with semi-automatic precision</li>
+    <li>subject_story->developed stabilization systems for unmatched accuracy on the move</li>
+    <li>subject_story->adapted rifles for various environments, from urban to wilderness</li>
+    <li>subject_gerund->shaping the future of engagement with marksman rifles</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -141,6 +231,16 @@
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
   <researchViewX>5.00</researchViewX>
   <researchViewY>0.15</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->explosive versatility</li>
+    <li>subject_story->expanded the arsenal with grenades for every combat situation</li>
+    <li>subject_story->innovated with non-lethal options for crowd control and deterrence</li>
+    <li>subject_story->enhanced fuse mechanisms for precise timing and effect</li>
+    <li>subject_story->customized payloads for specific tactical needs</li>
+    <li>subject_gerund->arming troops with the right tools for any engagement</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -157,6 +257,16 @@
 		<requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
   <researchViewX>8.00</researchViewX>
   <researchViewY>0.15</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->pinpoint accuracy</li>
+    <li>subject_story->revolutionized precision strikes with advanced laser guidance</li>
+    <li>subject_story->enabled real-time target acquisition and adjustment</li>
+    <li>subject_story->integrated systems with existing weaponry for enhanced combat effectiveness</li>
+    <li>subject_story->developed compact, portable laser designators for field operations</li>
+    <li>subject_gerund->honing the edge of warfare with technology</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 </Defs>
