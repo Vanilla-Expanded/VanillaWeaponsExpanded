@@ -131,8 +131,8 @@
 				<verbClass>Verb_LaunchProjectile</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<range>11.9</range>
-				<forcedMissRadius>1.9</forcedMissRadius>
-				<warmupTime>2.5</warmupTime>
+				<forcedMissRadius>3.9</forcedMissRadius>
+				<warmupTime>3.5</warmupTime>
 				<noiseRadius>4</noiseRadius>
 				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
 				<soundCast>ThrowGrenade</soundCast>
@@ -145,7 +145,7 @@
 		</verbs>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveRadius>1.99</explosiveRadius>
 				<explosiveDamageType>Stun</explosiveDamageType>
 				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
 			</li>
@@ -162,9 +162,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<explosionRadius>4.3</explosionRadius>
+			<explosionRadius>1.99</explosionRadius>
 			<damageDef>Stun</damageDef>
-			<damageAmountBase>10</damageAmountBase>
+			<damageAmountBase>2</damageAmountBase>
 			<explosionDelay>100</explosionDelay>
 		</projectile>
 	</ThingDef>
