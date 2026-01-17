@@ -29,7 +29,7 @@
 			<li>SniperRifle</li>
 		</weaponTags>
 		<recipeMaker>
-			<researchPrerequisite>VWE_CompoundBow</researchPrerequisite>
+			<researchPrerequisite>Machining</researchPrerequisite>
 			<recipeUsers>
 				<li>TableMachining</li>
 			</recipeUsers>
@@ -367,7 +367,7 @@
 			<recipeUsers>
 				<li>TableMachining</li>
 			</recipeUsers>
-			<researchPrerequisite>VWE_HeavyWeapons</researchPrerequisite>
+			<researchPrerequisite>Machining</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -442,7 +442,7 @@
 			<recipeUsers>
 				<li>TableMachining</li>
 			</recipeUsers>
-			<researchPrerequisite>VWE_Flamethrower</researchPrerequisite>
+			<researchPrerequisite>VWE_TrenchWarfare</researchPrerequisite>
 		</recipeMaker>
 		<verbs>
 			<li>
@@ -781,7 +781,7 @@
 		</graphicData>
 		<soundInteract>Interact_SMG</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -1039,7 +1039,7 @@
 			<recipeUsers>
 				<li>TableMachining</li>
 			</recipeUsers>
-			<researchPrerequisite>VWE_SpecializedFirearms</researchPrerequisite>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -1121,7 +1121,7 @@
 			<recipeUsers>
 				<li>TableMachining</li>
 			</recipeUsers>
-			<researchPrerequisite>VWE_SpecializedFirearms</researchPrerequisite>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -1203,7 +1203,7 @@
 			<recipeUsers>
 				<li>TableMachining</li>
 			</recipeUsers>
-			<researchPrerequisite>VWE_SpecializedFirearms</researchPrerequisite>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -1300,7 +1300,7 @@
 			<recipeUsers>
 				<li>TableMachining</li>
 			</recipeUsers>
-			<researchPrerequisite>VWE_DesignatedMarksmanRifle</researchPrerequisite>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>

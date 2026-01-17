@@ -18,7 +18,7 @@
 			<WorkToMake>5000</WorkToMake>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+			<researchPrerequisite>SmokepopBelt</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -99,7 +99,7 @@
 			<WorkToMake>24000</WorkToMake>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+			<researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>

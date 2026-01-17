@@ -110,7 +110,7 @@
 			<li>NeolithicRangedHeavy</li>
 		</weaponTags>
 		<recipeMaker>
-			<researchPrerequisite>VWE_Longbow</researchPrerequisite>
+			<researchPrerequisite>Greatbow</researchPrerequisite>
 			<recipeUsers>
 				<li>FueledSmithy</li>
 				<li>ElectricSmithy</li>

@@ -31,6 +31,7 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
 			<recipeUsers>
 				<li>CraftingSpot</li>
 				<li>FueledSmithy</li>
