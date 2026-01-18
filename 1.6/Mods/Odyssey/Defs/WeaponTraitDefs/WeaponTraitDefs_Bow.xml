@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Bow -->
+	<WeaponTraitDef>
+		<defName>VWE_PitchSoakedTips</defName>
+		<label>pitch-soaked tips</label>
+		<description>These projectiles have been dipped in sticky, flammable tar and wrapped in cloth. They have a high chance of igniting the target upon impact.</description>
+		<commonality>1</commonality>
+		<forcedColor>UniqueWeapon_Fire</forcedColor>
+		<damageDefOverride>VWE_Arrow_TraitIncendiary</damageDefOverride>
+		<weaponCategory>Bow</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<statOffsets>
+			<RangedWeapon_ArmorPenetrationMultiplier>0.3</RangedWeapon_ArmorPenetrationMultiplier>
+			<MarketValue>60</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>burning</li>
+			<li>fiery</li>
+			<li>tarred</li>
+			<li>scorched</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+</Defs>
