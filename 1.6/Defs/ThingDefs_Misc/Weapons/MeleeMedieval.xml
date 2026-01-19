@@ -65,10 +65,8 @@
   <!-- Battle Axe -->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>VWE_MeleeWeapon_BattleAxe</defName>
-    <!-- unique -->
     <label>battle axe</label>
     <description>A hefty, two-handed axe designed for cleaving through foes. Its wide, sharp blade delivers devastating cutting damage, while its mass allows for powerful but slow strikes.</description>
-    <!-- inspiration -->
     <graphicData>
       <texPath>Things/WeaponMelee/BattleAxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -76,6 +74,7 @@
     <techLevel>Medieval</techLevel>
     <weaponTags>
       <li>MedievalMeleeAdvanced</li>
+      <li>Axe</li>
     </weaponTags>
     <weaponClasses>
       <li>Melee</li>
@@ -144,6 +143,7 @@
     <techLevel>Medieval</techLevel>
     <weaponTags>
       <li>MedievalMeleeAdvanced</li>
+      <li>Spear</li>
     </weaponTags>
     <weaponClasses>
       <li>Melee</li>

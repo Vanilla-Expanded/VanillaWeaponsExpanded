@@ -30,6 +30,7 @@
       <li>NeolithicRangedChief</li>
     </weaponTags>
     <weaponClasses>
+      <li>Ranged</li>
       <li>RangedHeavy</li>
     </weaponClasses>
     <recipeMaker>
@@ -120,7 +121,11 @@
     </stuffCategories>
     <weaponTags>
       <li>NeolithicRangedBasic</li>
+      <li>NoRelic</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
     <recipeMaker>
       <recipeUsers>
         <li>FueledSmithy</li>
@@ -210,8 +215,9 @@
       <li>NeolithicRangedChief</li>
     </weaponTags>
     <weaponClasses>
-      <li>LongShots</li>
+      <li>Ranged</li>
       <li>RangedHeavy</li>
+      <li>LongShots</li>
     </weaponClasses>
     <recipeMaker>
       <researchPrerequisite>Greatbow</researchPrerequisite>

@@ -30,7 +30,11 @@
     <costStuffCount>5</costStuffCount>
     <weaponTags>
       <li>NeolithicRangedBasic</li>
+      <li>NoRelic</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
     <recipeMaker>
       <recipeUsers>
         <li>CraftingSpot</li>
