@@ -1402,7 +1402,7 @@
     <label>anti-materiel rifle</label>
     <description>Devastating, heavy-caliber bolt-action rifle designed to engage fortified positions and armored targets. It fires an exceptionally large round for superior damage and penetration at extreme ranges. Due to its weight and recoil, it's physically demanding and requires a long aiming period before it can be accurately fired.</description>
     <graphicData>
-      <texPath>NewThings/AntiMaterialRifle</texPath>
+      <texPath>NewThings/AntimaterielRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.34</drawSize>
     </graphicData>
