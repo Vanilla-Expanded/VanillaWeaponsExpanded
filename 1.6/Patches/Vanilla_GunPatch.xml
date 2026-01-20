@@ -1,23 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Patch>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Core</li>
-		</mods>
+  <!-- Change vanilla sniper shot -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SoundDef[defName="Shot_SniperRifle"]/subSounds/li/grains/li[clipFolderPath="Weapon/SniperRifle"]/clipFolderPath</xpath>
+    <value>
+      <clipFolderPath>Things/VanillaSniperShot</clipFolderPath>
+    </value>
+  </Operation>
 
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-			<operations>
-				<li Class="PatchOperationReplace">
-                    <xpath>/Defs/SoundDef[defName="Shot_SniperRifle"]/subSounds/li/grains/li[clipFolderPath="Weapon/SniperRifle"]/clipFolderPath</xpath>
-                    <value>
-						<clipFolderPath>Things/VanillaSniperShot</clipFolderPath>
-                    </value>
-                  </li>
-			</operations>
-		</match>
-	</Operation>
+  <!-- Give triple rocket launcher crafting price -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Gun_TripleRocket"]/costList</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Gun_TripleRocket"]/costList</xpath>
+      <value>
+        <costList>
+          <Steel>160</Steel>
+          <ComponentIndustrial>9</ComponentIndustrial>
+          <Shell_HighExplosive>3</Shell_HighExplosive>
+        </costList>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Gun_TripleRocket"]</xpath>
+      <value>
+        <costList>
+          <Steel>200</Steel>
+          <ComponentIndustrial>9</ComponentIndustrial>
+        </costList>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- Make triple rocket launcher craftable at machining table -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Gun_TripleRocket"]/recipeMaker</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Gun_TripleRocket"]/recipeMaker</xpath>
+      <value>
+        <recipeMaker>
+          <recipeUsers>
+            <li>TableMachining</li>
+          </recipeUsers>
+          <researchPrerequisite>VWE_HeavyWeapons</researchPrerequisite>
+          <skillRequirements>
+            <Crafting>9</Crafting>
+          </skillRequirements>
+        </recipeMaker>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Gun_TripleRocket"]</xpath>
+      <value>
+        <recipeMaker>
+          <recipeUsers>
+            <li>TableMachining</li>
+          </recipeUsers>
+          <researchPrerequisite>VWE_HeavyWeapons</researchPrerequisite>
+          <skillRequirements>
+            <Crafting>9</Crafting>
+          </skillRequirements>
+        </recipeMaker>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- Give doomsday rocket launcher crafting price -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Gun_DoomsdayRocket"]/costList</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Gun_DoomsdayRocket"]/costList</xpath>
+      <value>
+        <costList>
+          <Steel>100</Steel>
+          <ComponentIndustrial>10</ComponentIndustrial>
+          <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+        </costList>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Gun_DoomsdayRocket"]</xpath>
+      <value>
+        <costList>
+          <Steel>100</Steel>
+          <ComponentIndustrial>10</ComponentIndustrial>
+          <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+        </costList>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- Make doomsday rocket launcher craftable at machining table -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Gun_DoomsdayRocket"]/recipeMaker</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Gun_DoomsdayRocket"]/recipeMaker</xpath>
+      <value>
+        <recipeMaker>
+          <recipeUsers>
+            <li>TableMachining</li>
+          </recipeUsers>
+          <researchPrerequisite>VWE_HeavyWeapons</researchPrerequisite>
+          <skillRequirements>
+            <Crafting>10</Crafting>
+          </skillRequirements>
+        </recipeMaker>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Gun_DoomsdayRocket"]</xpath>
+      <value>
+        <recipeMaker>
+          <recipeUsers>
+            <li>TableMachining</li>
+          </recipeUsers>
+          <researchPrerequisite>VWE_HeavyWeapons</researchPrerequisite>
+          <skillRequirements>
+            <Crafting>10</Crafting>
+          </skillRequirements>
+        </recipeMaker>
+      </value>
+    </nomatch>
+  </Operation>
 
 </Patch>

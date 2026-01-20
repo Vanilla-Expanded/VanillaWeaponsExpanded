@@ -6,6 +6,8 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
+        <!-- TODO: Remove, not needed, move to weapons themselves -->
+        
         <!-- Anything that herit from BaseMakeableGrenade already have Ranged class -->
         <!-- Anything that herit from BaseMeleeWeapon_Blunt_Quality already have MeleeBlunt class -->
         <!-- Anything that herit from BaseMeleeWeapon_Sharp_Quality already have MeleePiercer class -->
