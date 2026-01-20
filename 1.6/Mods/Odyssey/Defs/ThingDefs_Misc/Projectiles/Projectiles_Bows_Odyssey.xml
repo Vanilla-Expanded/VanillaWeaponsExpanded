@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="VWE_BaseExplosiveProjectile">
+		<defName>VWE_BlastTips_Arrow</defName>
+		<label>blast tip arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+			
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			 <speed>44</speed>
+		</projectile>
+		
+	</ThingDef>
+	<ThingDef ParentName="VWE_BaseExplosiveProjectile">
+		<defName>VWE_BlastTips_LargeArrow</defName>
+		<label>blast tip arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Large</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+			
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			<speed>60</speed>
+		</projectile>
+		
+	</ThingDef>
+	<ThingDef ParentName="VWE_BaseExplosiveProjectile">
+		<defName>VWE_BlastTips_Bolt</defName>
+		<label>blast tip bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+			
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			<speed>65</speed>
+		</projectile>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="VWE_BaseExplosiveProjectile">
+		<defName>VWE_BlastTips_Compound</defName>
+		<label>blast tip compound arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Modern</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+			
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			 <speed>65</speed>
+		</projectile>
+		
+	</ThingDef>
+	
+	
+	
+</Defs>

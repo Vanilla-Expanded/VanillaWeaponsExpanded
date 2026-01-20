@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Compound Bow -->
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="BaseWeaponNeolithic" Name="VWE_Bow_Compound_Base">
     <defName>VWE_Bow_Compound</defName>
     <label>compound bow</label>
     <description>A compact, sophisticated compound hunting bow. Its cam system stores high energy, providing superior accuracy and launching armor-piercing, high-velocity arrows. The reduced sound signature makes it ideal for stealthy hunting.</description>

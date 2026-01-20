@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="VWE_BaseExplosiveProjectile" Abstract="True">
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>projectile</label>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>15</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+	
+	
+
+</Defs>

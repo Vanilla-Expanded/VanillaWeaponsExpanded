@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>VWE_HuntingStealth</defName>
+		<label>hunting stealth</label>
+		<description>The weapon held by this person provides increased hunting stealth.</description>
+		<isBad>false</isBad>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<duplicationAllowed>false</duplicationAllowed>
+		<stages>
+			<li>
+				<statFactors>
+					<HuntingStealth>0.3</HuntingStealth>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VWE_ExtraPain</defName>
+		<description>This creature has increased pain sensitivity due to being struck by a barbed arrow.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>increased pain sensitivity</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>1.5</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VWE_ReducedMoveSpeed</defName>
+		<label>encumbered</label>
+		<description>The weapon held by this person is very heavy, reducing move speed.</description>
+		<isBad>false</isBad>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<duplicationAllowed>false</duplicationAllowed>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>-0.2</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

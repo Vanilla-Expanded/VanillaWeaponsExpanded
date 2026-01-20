@@ -32,7 +32,7 @@
 		<statOffsets>
 			<MarketValue>50</MarketValue>
 			<RangedWeapon_WarmupMultiplier>0.35</RangedWeapon_WarmupMultiplier>
-			 <RangedWeapon_DamageMultiplier>0.25</RangedWeapon_DamageMultiplier>
+			<RangedWeapon_DamageMultiplier>0.25</RangedWeapon_DamageMultiplier>
 		</statOffsets>
 		<traitAdjectives>
 			<li>heavy</li>
@@ -40,6 +40,199 @@
 			<li>hard-draw</li>
 			<li>tensioned</li>
 		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_WhisperFletching</defName>
+		<label>whisper fletching</label>
+		<description>The projectiles use soft, owl-down fletching that silences their flight. It generates almost no noise, preventing animals from fleeing when missed.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<equippedHediffs>
+			<li>VWE_HuntingStealth</li>
+		</equippedHediffs>
+		<statOffsets>
+			<HuntingStealth>0.3</HuntingStealth>
+			<MarketValue>35</MarketValue>
+		</statOffsets>
+		<statFactors>
+			<AccuracyMedium>1.1</AccuracyMedium>
+			<AccuracyLong>1.1</AccuracyLong>
+		</statFactors>
+		<traitAdjectives>
+			<li>silent</li>
+			<li>whiskered</li>
+			<li>owl-feather</li>
+			<li>hunting</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_BarbedHeads</defName>
+		<label>barbed heads</label>
+		<description>The projectiles are tipped with jagged, cruel hooks designed to tear flesh and get stuck in the wound. They cause immense pain and have higher stopping power.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<additionalStoppingPower>1</additionalStoppingPower>
+		<statOffsets>
+			<RangedWeapon_DamageMultiplier>0.15</RangedWeapon_DamageMultiplier>
+			<MarketValue>45</MarketValue>
+		</statOffsets>
+		<damageDefOverride>VWE_Arrow_Painful</damageDefOverride>
+		<traitAdjectives>
+			<li>cruel</li>
+			<li>jagged</li>
+			<li>barbed</li>
+			<li>tearing</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_QuickDrawString</defName>
+		<label>quick-draw string</label>
+		<description>This bow is strung with a flexible, slightly slacker string. It allows for rapid volley fire at the cost of range and armor penetration.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<statOffsets>
+			<MarketValue>25</MarketValue>
+			<RangedWeapon_WarmupMultiplier>-0.3</RangedWeapon_WarmupMultiplier>
+			<RangedWeapon_RangeMultiplier>-0.15</RangedWeapon_RangeMultiplier>
+		</statOffsets>
+		<statFactors>
+			<RangedWeapon_ArmorPenetrationMultiplier>0.5</RangedWeapon_ArmorPenetrationMultiplier>
+		</statFactors>
+		<traitAdjectives>
+			<li>loose</li>
+			<li>rapid</li>
+			<li>skirmisher</li>
+			<li>volley</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_TwinNock</defName>
+		<label>twin-nock</label>
+		<description>This weapon is designed to fire two projectiles simultaneously. It creates a hail of arrows but makes aiming at specific targets much more difficult.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<burstShotCountMultiplier>2</burstShotCountMultiplier>
+		<statOffsets>
+			<MarketValue>40</MarketValue>
+		</statOffsets>
+		<statFactors>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.7</AccuracyMedium>
+			<AccuracyLong>0.6</AccuracyLong>
+		</statFactors>
+		<traitAdjectives>
+			<li>double</li>
+			<li>twin</li>
+			<li>duo</li>
+			<li>volley</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_BluntHeads</defName>
+		<label>blunt heads</label>
+		<description>The projectiles are tipped with heavy, flat weights instead of sharp points. They deal blunt trauma, cracking bones and causing bruising rather than bleeding wounds.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<damageDefOverride>Blunt</damageDefOverride>
+		 <additionalStoppingPower>1.5</additionalStoppingPower>
+		<statOffsets>
+			
+			<MarketValue>30</MarketValue>
+		</statOffsets>
+		<statFactors>
+			<RangedWeapon_ArmorPenetrationMultiplier>0.1</RangedWeapon_ArmorPenetrationMultiplier>
+		</statFactors>
+		<traitAdjectives>
+			<li>stunning</li>
+			<li>heavy</li>
+			<li>smashing</li>
+			<li>thumping</li>
+			<li>blunt</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_SiegeAssembly</defName>
+		<label>siege assembly</label>
+		<description>This weapon is modified with heavy pulleys, a windlass, or reinforced laminate limbs, effectively turning it into a portable ballista. It hits with devastating force, capable of piercing thick armor, but the weapon is incredibly heavy and agonizingly slow to aim.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<exclusionTags>
+			<li>Weight</li>
+		</exclusionTags>
 		
+		<statOffsets>
+			<RangedWeapon_ArmorPenetrationMultiplier>0.5</RangedWeapon_ArmorPenetrationMultiplier>
+			 <RangedWeapon_DamageMultiplier>0.4</RangedWeapon_DamageMultiplier>
+			 <RangedWeapon_WarmupMultiplier>0.8</RangedWeapon_WarmupMultiplier>
+			<MarketValue>90</MarketValue>
+		</statOffsets>
+		<equippedHediffs>
+			<li>VWE_ReducedMoveSpeed</li>
+		</equippedHediffs>
+		<traitAdjectives>
+			<li>siege</li>
+			<li>heavy</li>
+			<li>ballista</li>
+			<li>titan</li>
+			<li>sluggish</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_BlastTips</defName>
+		<label>blast tips</label>
+		<description>The arrowheads are replaced with crude, volatile explosive charges. Upon impact, they detonate in a small radius, dealing significant damage to clusters of enemies. However, the heavy and unbalanced payload causes the projectile to tumble in flight, making accurate fire nearly impossible.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		
+		
+		<statOffsets>
+			
+			<MarketValue>110</MarketValue>
+		</statOffsets>
+		<statFactors>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+		</statFactors>
+		<traitAdjectives>
+			<li>blasting</li>
+			<li>booming</li>
+			<li>explosive</li>
+			<li>volatile</li>
+			<li>unstable</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>VWE_BlastTips_Arrow</projectileOverride>
+				<projectileOverrides>
+					<li>
+						<key>VWE_Bow_Crossbow_Unique</key>
+						<value>VWE_BlastTips_Bolt</value>
+					</li>
+					<li>
+						<key>VWE_Bow_Crossbow_Unique</key>
+						<value>VWE_BlastTips_LargeArrow</value>
+					</li>
+					<li>
+						<key>VWE_Bow_Compound_Unique</key>
+						<value>VWE_BlastTips_Compound</value>
+					</li>
+				</projectileOverrides>
+			</li>
+		</modExtensions>
 	</WeaponTraitDef>
 </Defs>

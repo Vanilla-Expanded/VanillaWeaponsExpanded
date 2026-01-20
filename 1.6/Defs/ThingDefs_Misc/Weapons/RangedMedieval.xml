@@ -186,7 +186,7 @@
   </ThingDef>
 
   <!-- Longbow -->
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="BaseWeaponNeolithic" Name="VWE_Bow_Long_Base">
     <defName>VWE_Bow_Long</defName>
     <label>longbow</label>
     <description>A tall, powerful bow requiring great strength to draw. It launches high velocity arrows at extreme range.</description>

@@ -1,141 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
-
-<ThingDef ParentName="VWE_Crossbow_Base">
-    <defName>VWE_Bow_Crossbow_Unique</defName>
-    <label>unique crossbow</label>
-    <description>A crossbow with customized parts.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/UniqueCrossbow</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
-    <!-- If changes are made to the comps of BaseWeaponNeolithic or parents then they will need to be replicated here -->
-    <comps Inherit="False">
-      <li Class="CompProperties_EquippableAbilityReloadable" /> <!-- Props are populated by traits -->
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_UniqueWeapon">
-        <weaponCategories>
-          <li>Ranged</li>
-          <li>Bow</li>
-        </weaponCategories>
-        <namerLabels>
-          <li>crossbow</li>
-         
-        </namerLabels>
-      </li>
-    </comps>
-    <generateAllowChance>0</generateAllowChance>
-    <possessionCount>0</possessionCount>
-    <tradeability>Sellable</tradeability>
-    <thingSetMakerTags Inherit="False" >
-      <li>RewardStandardHighFreq</li>
-      <li>UniqueWeapon</li>
-    </thingSetMakerTags>
-    <recipeMaker Inherit="False" IsNull="True" />
-    <thingCategories Inherit="False">
-      <li>WeaponsUnique</li>
-    </thingCategories>
-    <descriptionHyperlinks>
-      <ThingDef>VWE_Bow_Crossbow</ThingDef>
-    </descriptionHyperlinks>
-  </ThingDef>
-
-
-
-<!--	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>AArmoury_Gun_Launcher_Unique</defName>
-		<label>unique launcher</label>
-		<description>A customized wide-barreled shell launcher. By default configured to fire smoke shells.</description>
+	<ThingDef ParentName="VWE_Crossbow_Base">
+		<defName>VWE_Bow_Crossbow_Unique</defName>
+		<label>unique crossbow</label>
+		<description>A crossbow with customized parts.</description>
 		<graphicData>
-			<texPath>Things/Weapon/AArmoury_Launcher</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/UniqueCrossbow</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
-		<statBases>
-			<WorkToMake>30000</WorkToMake>
-			<Mass>3.4</Mass>
-			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
-		</statBases>
-		<costList>
-			<Steel>75</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-		</costList>
-		<weaponTags Inherit="False">
-			<li>GrenadeSmoke</li>
-		</weaponTags>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_SmokeLauncher</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>23.9</range>
-				<forcedMissRadius>1.9</forcedMissRadius>
-				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>14</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+		<!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
+		<!-- If changes are made to the comps of BaseWeaponNeolithic or parents then they will need to be replicated here -->
 		<comps Inherit="False">
 			<li Class="CompProperties_EquippableAbilityReloadable"/>
-			
+			<!-- Props are populated by traits -->
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
-			
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
-			<li Class="CompProperties_Art">
-				<nameMaker>NamerArtWeaponGun</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-				<minQualityForArtistic>Excellent</minQualityForArtistic>
-			</li>
 			<li Class="CompProperties_UniqueWeapon">
 				<weaponCategories>
-					
-					<li>Attachable</li>
-					<li>AArmoury_Gun_Launcher_Unique</li>
-					<li>AArmoury_All</li>
-					<li>AArmoury_AllButBows</li>
+					<li>Ranged</li>
+					<li>Bow</li>
 				</weaponCategories>
 				<namerLabels>
-					<li>launcher</li>
+					<li>crossbow</li>
 				</namerLabels>
 			</li>
 		</comps>
@@ -143,7 +33,7 @@
 		<possessionCount>0</possessionCount>
 		<tradeability>Sellable</tradeability>
 		<thingSetMakerTags Inherit="False">
-			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardHighFreq</li>
 			<li>UniqueWeapon</li>
 		</thingSetMakerTags>
 		<recipeMaker Inherit="False" IsNull="True"/>
@@ -151,10 +41,95 @@
 			<li>WeaponsUnique</li>
 		</thingCategories>
 		<descriptionHyperlinks>
-			<ThingDef>Gun_SmokeLauncher</ThingDef>
+			<ThingDef>VWE_Bow_Crossbow</ThingDef>
 		</descriptionHyperlinks>
-		
 	</ThingDef>
-	
--->
+	<ThingDef ParentName="VWE_Bow_Long_Base">
+		<defName>VWE_Bow_Long_Unique</defName>
+		<label>unique longbow</label>
+		<description>A longbow with customized parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/UniqueLongbow</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
+		<!-- If changes are made to the comps of BaseWeaponNeolithic or parents then they will need to be replicated here -->
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable"/>
+			<!-- Props are populated by traits -->
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>Bow</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>longbow</li>
+				</namerLabels>
+			</li>
+		</comps>
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>RewardStandardHighFreq</li>
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True"/>
+		<thingCategories Inherit="False">
+			<li>WeaponsUnique</li>
+		</thingCategories>
+		<descriptionHyperlinks>
+			<ThingDef>VWE_Bow_Long</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+<ThingDef ParentName="VWE_Bow_Compound_Base">
+		<defName>VWE_Bow_Compound_Unique</defName>
+		<label>unique compond bow</label>
+		<description>A compond bow with customized parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/UniqueCompoundBow</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
+		<!-- If changes are made to the comps of BaseWeaponNeolithic or parents then they will need to be replicated here -->
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable"/>
+			<!-- Props are populated by traits -->
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>Bow</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>compound bow</li>
+				</namerLabels>
+			</li>
+		</comps>
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>RewardStandardHighFreq</li>
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True"/>
+		<thingCategories Inherit="False">
+			<li>WeaponsUnique</li>
+		</thingCategories>
+		<descriptionHyperlinks>
+			<ThingDef>VWE_Bow_Compound</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
 </Defs>

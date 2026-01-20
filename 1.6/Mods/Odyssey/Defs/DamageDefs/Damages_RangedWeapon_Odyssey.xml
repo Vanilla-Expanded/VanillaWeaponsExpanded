@@ -10,4 +10,15 @@
 			</points>
 		</igniteChanceByTargetFlammability>
 	</DamageDef>
+	<DamageDef ParentName="Arrow">
+		<defName>VWE_Arrow_Painful</defName>
+		<label>arrow</label>
+		<additionalHediffs>
+			<li>
+				<hediff>VWE_ExtraPain</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 </Defs>
