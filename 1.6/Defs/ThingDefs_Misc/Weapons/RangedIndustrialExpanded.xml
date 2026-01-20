@@ -7,7 +7,7 @@
     <label>compound bow</label>
     <description>A compact, sophisticated compound hunting bow. Its cam system stores high energy, providing superior accuracy and launching armor-piercing, high-velocity arrows. The reduced sound signature makes it ideal for stealthy hunting.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/CompoundBow</texPath>
+      <texPath>NewThings/CompoundBow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Bow_Large</soundInteract>
@@ -109,7 +109,7 @@
     <label>heavy revolver</label>
     <description>A massive, high-caliber revolver, designed to deliver a devastating single punch. Its heavy frame and long barrel manage the immense recoil, making it slow to draw but highly effective at putting down targets with its powerful, armor-piercing rounds.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/HandCannon</texPath>
+      <texPath>NewThings/HeavyRevolver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
@@ -201,7 +201,7 @@
     <label>combat handgun</label>
     <description>A modern, blowback-operated self-loading pistol designed for close-quarters engagement. It can be fired rapidly for superior short-range lethality and is slightly more accurate than standard autopistols.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/CombatHandgun</texPath>
+      <texPath>NewThings/CombatHandgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -291,7 +291,7 @@
     <label>sawn-off shotgun</label>
     <description>A compact, double-barreled shotgun with a shortened stock and barrel. Designed for close-quarters engagements, it delivers a devastating, wide-spread blast at extremely short range, making it a terrifying ambush weapon.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/SawedOffShotgun</texPath>
+      <texPath>NewThings/SawnOffShotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -392,7 +392,7 @@
     <label>grenade launcher</label>
     <description>A lightweight, breech-loaded launcher that fires fragmentation grenades. It projects a frag grenade a moderate distance, inflicting damage in a small blast radius.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/GrenadeLauncher</texPath>
+      <texPath>NewThings/GrenadeLauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -465,7 +465,7 @@
     <label>flamethrower</label>
     <description>A specialized, man-portable incendiary weapon. It projects a stream of searing hot fuel that ignites on contact, rapidly spreading flame across a short-to-medium range. Highly effective against unarmored targets and excellent for clearing enclosed spaces or burning away flammable cover.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/Flamethrower</texPath>
+      <texPath>NewThings/Flamethrower</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.12</drawSize>
     </graphicData>
@@ -594,7 +594,7 @@
     <label>semi-automatic rifle</label>
     <description>A durable, self-loading rifle designed for rapid, controlled fire at medium-to-long ranges. Its mechanism allows for a high rate of fire compared to bolt-action models, making it ideal for maintaining continuous pressure on an enemy.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/SemiAutomaticRifle</texPath>
+      <texPath>NewThings/SemiAutomaticRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -678,7 +678,7 @@
     <label>lever-action rifle</label>
     <description>A traditional hunting rifle utilizing a lever-action mechanism. It offers a balance of moderate firepower, decent accuracy, and a fast follow-up shot compared to bolt-action designs, making it a reliable weapon for medium-range engagements.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/LeverActionRifle</texPath>
+      <texPath>NewThings/LeverActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -768,7 +768,7 @@
     <label>light SMG</label>
     <description>A small, lightweight submachine gun designed for maneuverability in close-quarters combat. It fires a rapid burst of small-caliber rounds, making it highly effective at short range but quickly losing accuracy over distance.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/LightSMG</texPath>
+      <texPath>NewThings/LightSMG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
@@ -858,7 +858,7 @@
     <label>SMG</label>
     <description>Modern, magazine-fed SMG built for overwhelming close-quarters fire. It uses small-caliber rounds in a long burst, sacrificing long-range accuracy for sheer, close-up firepower.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/SMG</texPath>
+      <texPath>NewThings/SMG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
@@ -948,7 +948,7 @@
     <label>HMG</label>
     <description>A gas-operated heavy machine gun. Its massive frame and long barrel make it extremely heavy and slow to maneuver, but it delivers devastatingly long bursts of heavy-caliber fire, designed to suppress and tear through armored targets and groups of enemies.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/HMG</texPath>
+      <texPath>NewThings/HMG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.06</drawSize>
     </graphicData>
@@ -1043,7 +1043,7 @@
     <label>service rifle</label>
     <description>A versatile and rugged assault rifle widely used around the galaxy by militia forces and mercenaries.\n\nNot as powerful as an assault rifle, but deliver 4 shot bursts.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/ServiceRifle</texPath>
+      <texPath>NewThings/ServiceRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -1133,7 +1133,7 @@
     <label>battle rifle</label>
     <description>A gas-operated rifle designed to deliver a powerful, accurate shot in medium-to-long-range engagements. It uses a heavier caliber round than a standard assault rifle, sacrificing burst size for superior damage and armor penetration.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/BattleRifle</texPath>
+      <texPath>NewThings/BattleRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -1223,7 +1223,7 @@
     <label>carbine</label>
     <description>A general-purpose gas-operated assault rifle, slightly shortened and lighter for enhanced maneuverability. It fires an intermediate-caliber round in a long burst, offering good close-to-medium range accuracy but sacrificing long-range precision for superior handling.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/Carbine</texPath>
+      <texPath>NewThings/Carbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -1313,7 +1313,7 @@
     <label>marksman rifle</label>
     <description>A specialized, semi-automatic rifle. It fires a powerful round with higher velocity than a standard assault rifle, offering an excellent balance of long-range precision and a faster rate of follow-up shots.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/MarksmanRifle</texPath>
+      <texPath>NewThings/MarksmanRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.32</drawSize>
     </graphicData>
@@ -1402,7 +1402,7 @@
     <label>anti-materiel rifle</label>
     <description>Devastating, heavy-caliber bolt-action rifle designed to engage fortified positions and armored targets. It fires an exceptionally large round for superior damage and penetration at extreme ranges. Due to its weight and recoil, it's physically demanding and requires a long aiming period before it can be accurately fired.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/AntiMaterialRifle</texPath>
+      <texPath>NewThings/AntiMaterialRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.34</drawSize>
     </graphicData>
@@ -1479,7 +1479,7 @@
     <label>trench gun</label>
     <description>A modernized pump-action shotgun for close-quarters trench warfare. Solid construction and a short barrel enable rapid firing and maneuvering, delivering a devastating blast of buckshot at short range.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/SawedOffShotgun</texPath>
+      <texPath>NewThings/TrenchGun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>

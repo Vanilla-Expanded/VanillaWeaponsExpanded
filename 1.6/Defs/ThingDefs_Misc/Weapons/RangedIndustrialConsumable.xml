@@ -9,7 +9,7 @@
     <tickerType>Normal</tickerType>
     <techLevel>Industrial</techLevel>
     <graphicData>
-      <texPath>Things/Heavy/RocketLauncher</texPath>
+      <texPath>NewThings/RocketLauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

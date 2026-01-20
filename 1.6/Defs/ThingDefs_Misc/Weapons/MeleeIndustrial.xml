@@ -7,7 +7,7 @@
     <label>shovel</label>
     <description>One of the most versatile tools for a soldier, the entrenching tool is a simple but effective weapon. With a sturdy handle and a sharpened, heavy blade, it serves equally well for digging a trench or bludgeoning an enemy.</description>
     <graphicData>
-      <texPath>Things/WeaponMelee/Shovel</texPath>
+      <texPath>NewThings/Shovel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -69,7 +69,7 @@
     <label>baton</label>
     <description>A sturdy, weighted club used for incapacitation and crowd control. Its dense construction delivers powerful blunt force trauma, favored by police and security forces for non-lethal (and sometimes lethal) engagements.</description>
     <graphicData>
-      <texPath>Things/WeaponMelee/Baton</texPath>
+      <texPath>NewThings/Baton</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -127,7 +127,7 @@
     <label>combat knife</label>
     <description>OA refined and deadly tool, the military combat knife has taken many forms, but the concept has always remained the same: A handle for a sure grip and a sharp edge for cutting and thrusting, optimized for battlefield use.</description>
     <graphicData>
-      <texPath>Things/WeaponMelee/CombatKnife</texPath>
+      <texPath>NewThings/CombatKnife</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Industrial</techLevel>

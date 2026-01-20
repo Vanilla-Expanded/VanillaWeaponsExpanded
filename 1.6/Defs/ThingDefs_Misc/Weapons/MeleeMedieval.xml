@@ -7,7 +7,7 @@
     <label>hammer</label>
     <description>A simple, single-handed weapon with a heavy head, designed to deliver powerful blunt force to crush enemies. Using a hammer increases the construction speed slightly.</description>
     <graphicData>
-      <texPath>Things/WeaponMelee/Hammer</texPath>
+      <texPath>NewThings/Hammer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -68,7 +68,7 @@
     <label>battle axe</label>
     <description>A hefty, two-handed axe designed for cleaving through foes. Its wide, sharp blade delivers devastating cutting damage, while its mass allows for powerful but slow strikes.</description>
     <graphicData>
-      <texPath>Things/WeaponMelee/BattleAxe</texPath>
+      <texPath>NewThings/BattleAxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -127,7 +127,7 @@
     <label>poleaxe</label>
     <description>A versatile polearm featuring a sharp axe head and a back spike, designed for rapid, decisive blows against armored foes. The reach of the poleaxe allows to strike enemies much further away.</description>
     <graphicData>
-      <texPath>Things/WeaponMelee/Halberd</texPath>
+      <texPath>NewThings/Poleaxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2.0</drawSize>
     </graphicData>

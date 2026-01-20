@@ -7,7 +7,7 @@
     <label>hatchet</label>
     <description>A small, single-handed axe designed for quick, repeated strikes. Its light weight and short handle allow for fast swinging speed. Using a hatchet increases the plant harvest yield slightly.</description>
     <graphicData>
-      <texPath>Things/WeaponMelee/Axe</texPath>
+      <texPath>NewThings/Hatchet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>

@@ -7,7 +7,7 @@
     <label>crossbow</label>
     <description>A simple crossbow. It fires a standard bolt with decent accuracy and firing rate, making it a reliable mid-tier anti-armor ranged weapon.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/Crossbow</texPath>
+      <texPath>NewThings/Crossbow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Bow_Large</soundInteract>
@@ -99,7 +99,7 @@
     <label>throwing knives</label>
     <description>A small bundle of light, balanced knives designed to be thrown rapidly. Ineffective against armor, but capable of high close-range damage.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/ThrowingKnives</texPath>
+      <texPath>NewThings/ThrowingKnives</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Silver_Drop</soundInteract>
@@ -191,7 +191,7 @@
     <label>longbow</label>
     <description>A tall, powerful bow requiring great strength to draw. It launches high velocity arrows at extreme range.</description>
     <graphicData>
-      <texPath>Things/WeaponRanged/Longbow</texPath>
+      <texPath>NewThings/Longbow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.12</drawSize>
     </graphicData>
