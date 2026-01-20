@@ -23,4 +23,23 @@
 			<li>scorched</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_HighTensionLimbs</defName>
+		<label>high-tension limbs</label>
+		<description>The limbs of this weapon are incredibly stiff, storing massive amounts of kinetic energy. It takes much longer to draw or crank, but the projectile flies faster and hits harder.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<statOffsets>
+			<MarketValue>50</MarketValue>
+			<RangedWeapon_WarmupMultiplier>0.35</RangedWeapon_WarmupMultiplier>
+			 <RangedWeapon_DamageMultiplier>0.25</RangedWeapon_DamageMultiplier>
+		</statOffsets>
+		<traitAdjectives>
+			<li>heavy</li>
+			<li>stiff</li>
+			<li>hard-draw</li>
+			<li>tensioned</li>
+		</traitAdjectives>
+		
+	</WeaponTraitDef>
 </Defs>

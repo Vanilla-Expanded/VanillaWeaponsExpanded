@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Crossbow -->
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="BaseWeaponNeolithic" Name="VWE_Crossbow_Base">
     <defName>VWE_Bow_Crossbow</defName>
     <label>crossbow</label>
     <description>A simple crossbow. It fires a standard bolt with decent accuracy and firing rate, making it a reliable mid-tier anti-armor ranged weapon.</description>

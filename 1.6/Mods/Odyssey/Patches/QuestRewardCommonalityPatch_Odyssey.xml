@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_Revolver_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_BoltActionRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_ChainShotgun_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_HeavySMG_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_LMG_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_AssaultRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_SniperRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_Minigun_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Bow_Great_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_ChargeRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_ChargeLance_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName= "Gun_BeamRepeater_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+				<value>
+					<li>RewardStandardHighFreq</li>
+				</value>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Anomaly</li>
+				</mods>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName= "Gun_HellcatRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
+					<value>
+						<li>RewardStandardHighFreq</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
