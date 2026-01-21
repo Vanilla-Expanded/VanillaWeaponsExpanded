@@ -4,7 +4,7 @@
 		<defName>VWE_BlastTips_Arrow</defName>
 		<label>blast tip arrow</label>
 		<graphicData>
-			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<texPath>Things/Projectile/ExplosiveTip_Arrow_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			
 		</graphicData>
@@ -21,7 +21,7 @@
 		<defName>VWE_BlastTips_LargeArrow</defName>
 		<label>blast tip arrow</label>
 		<graphicData>
-			<texPath>Things/Projectile/Arrow_Large</texPath>
+			<texPath>Things/Projectile/ExplosiveTip_Arrow_Large</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			
 		</graphicData>
@@ -38,7 +38,7 @@
 		<defName>VWE_BlastTips_Bolt</defName>
 		<label>blast tip bolt</label>
 		<graphicData>
-			<texPath>Things/Projectile/Arrow_Bolt</texPath>
+			<texPath>Things/Projectile/ExplosiveTip_Arrow_Bolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -56,7 +56,7 @@
 		<defName>VWE_BlastTips_Compound</defName>
 		<label>blast tip compound arrow</label>
 		<graphicData>
-			<texPath>Things/Projectile/Arrow_Modern</texPath>
+			<texPath>Things/Projectile/ExplosiveTip_Arrow_Modern</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
