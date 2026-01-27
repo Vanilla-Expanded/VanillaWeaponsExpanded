@@ -144,9 +144,8 @@
 			<li>AmmoType</li>
 		</exclusionTags>
 		<damageDefOverride>Blunt</damageDefOverride>
-		 <additionalStoppingPower>1.5</additionalStoppingPower>
+		<additionalStoppingPower>1.5</additionalStoppingPower>
 		<statOffsets>
-			
 			<MarketValue>30</MarketValue>
 		</statOffsets>
 		<statFactors>
@@ -169,11 +168,10 @@
 		<exclusionTags>
 			<li>Weight</li>
 		</exclusionTags>
-		
 		<statOffsets>
 			<RangedWeapon_ArmorPenetrationMultiplier>0.5</RangedWeapon_ArmorPenetrationMultiplier>
-			 <RangedWeapon_DamageMultiplier>0.4</RangedWeapon_DamageMultiplier>
-			 <RangedWeapon_WarmupMultiplier>0.8</RangedWeapon_WarmupMultiplier>
+			<RangedWeapon_DamageMultiplier>0.4</RangedWeapon_DamageMultiplier>
+			<RangedWeapon_WarmupMultiplier>0.8</RangedWeapon_WarmupMultiplier>
 			<MarketValue>90</MarketValue>
 		</statOffsets>
 		<equippedHediffs>
@@ -196,10 +194,7 @@
 		<exclusionTags>
 			<li>AmmoType</li>
 		</exclusionTags>
-		
-		
 		<statOffsets>
-			
 			<MarketValue>110</MarketValue>
 		</statOffsets>
 		<statFactors>
@@ -232,6 +227,87 @@
 						<value>VWE_BlastTips_Compound</value>
 					</li>
 				</projectileOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_SlipString</defName>
+		<label>slip-string</label>
+		<description>This bow uses a specifically waxed, low-friction string. It allows the archer to hold extra arrows in their draw hand and loose them in a blur of motion. The hasty release prevents a full draw, limiting the weapon's effective range.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<statOffsets>
+			<RangedWeapon_RangeMultiplier>-0.25</RangedWeapon_RangeMultiplier>
+			<MarketValue>75</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>swift</li>
+			<li>blur</li>
+			<li>rapid</li>
+			<li>speed-draw</li>
+			<li>slip</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<verbsOverride>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Arrow_Short</defaultProjectile>
+						<warmupTime>1.35</warmupTime>
+						<range>22.9</range>
+						<soundCast>Bow_Small</soundCast>
+						<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+						<burstShotCount>3</burstShotCount>
+					</li>
+				</verbsOverride>
+				<verbsOverrides>
+					<li>
+						<key>VWE_Bow_Crossbow_Unique</key>
+						<value>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>VWE_Arrow_Bolt</defaultProjectile>
+								<warmupTime>1.5</warmupTime>
+								<range>29.9</range>
+								<soundCast>VWE_Shot_Crossbow</soundCast>
+								<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+								<burstShotCount>3</burstShotCount>
+							</li>
+						</value>
+					</li>
+					<li>
+						<key>VWE_Bow_Long_Unique</key>
+						<value>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>VWE_Arrow_Long</defaultProjectile>
+								<warmupTime>2.5</warmupTime>
+								<range>36.9</range>
+								<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+								<burstShotCount>3</burstShotCount>
+								<soundCast>Bow_Large</soundCast>
+							</li>
+						</value>
+					</li>
+					<li>
+						<key>VWE_Bow_Compound_Unique</key>
+						<value>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>VWE_Arrow_Compound</defaultProjectile>
+								<warmupTime>1.5</warmupTime>
+								<range>29.9</range>
+								<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+								<burstShotCount>3</burstShotCount>
+								<soundCast>VWE_Bow_Compound</soundCast>
+							</li>
+						</value>
+					</li>
+				</verbsOverrides>
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>

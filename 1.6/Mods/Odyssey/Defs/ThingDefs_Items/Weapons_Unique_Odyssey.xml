@@ -88,7 +88,7 @@
 			<ThingDef>VWE_Bow_Long</ThingDef>
 		</descriptionHyperlinks>
 	</ThingDef>
-<ThingDef ParentName="VWE_Bow_Compound_Base">
+	<ThingDef ParentName="VWE_Bow_Compound_Base">
 		<defName>VWE_Bow_Compound_Unique</defName>
 		<label>unique compond bow</label>
 		<description>A compond bow with customized parts.</description>
@@ -130,6 +130,62 @@
 		</thingCategories>
 		<descriptionHyperlinks>
 			<ThingDef>VWE_Bow_Compound</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	<ThingDef ParentName="VWE_Gun_HandCannon_Base">
+		<defName>VWE_Gun_HandCannon_Unique</defName>
+		<label>unique heavy revolver</label>
+		<description>A heavy revolver with customized parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/UniqueHeavyRevolver</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
+		<!-- If changes are made to the comps of BaseHumanMakeableGun or parents then they will need to be replicated here -->
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable"/>
+			<!-- Props are populated by traits -->
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Pistol</li>
+					<li>Sighted</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>revolver</li>
+					<li>six-shooter</li>
+					<li>iron</li>
+					<li>hammer</li>
+				</namerLabels>
+			</li>
+		</comps>
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>RewardStandardHighFreq</li>
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True"/>
+		<thingCategories Inherit="False">
+			<li>WeaponsUnique</li>
+		</thingCategories>
+		<descriptionHyperlinks>
+			<ThingDef>VWE_Gun_HandCannon</ThingDef>
 		</descriptionHyperlinks>
 	</ThingDef>
 </Defs>

@@ -104,7 +104,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_HandCannon_Base">
     <defName>VWE_Gun_HandCannon</defName>
     <label>heavy revolver</label>
     <description>A massive, high-caliber revolver, designed to deliver a devastating single punch. Its heavy frame and long barrel manage the immense recoil, making it slow to draw but highly effective at putting down targets with its powerful, armor-piercing rounds.</description>
