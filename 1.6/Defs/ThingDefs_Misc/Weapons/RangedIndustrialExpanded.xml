@@ -196,7 +196,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_CombatHandgun_Base">
     <defName>VWE_CombatHandgun</defName>
     <label>combat handgun</label>
     <description>A modern, blowback-operated self-loading pistol designed for close-quarters engagement. It can be fired rapidly for superior short-range lethality and is slightly more accurate than standard autopistols.</description>
@@ -286,7 +286,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_SawedOffShotgun_Base">
     <defName>VWE_SawedOffShotgun</defName>
     <label>sawn-off shotgun</label>
     <description>A compact, double-barreled shotgun with a shortened stock and barrel. Designed for close-quarters engagements, it delivers a devastating, wide-spread blast at extremely short range, making it a terrifying ambush weapon.</description>
@@ -589,7 +589,7 @@
     </graphicData>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_SemiAutomaticRifle_Base">
     <defName>VWE_Gun_SemiAutomaticRifle</defName>
     <label>semi-automatic rifle</label>
     <description>A durable, self-loading rifle designed for rapid, controlled fire at medium-to-long ranges. Its mechanism allows for a high rate of fire compared to bolt-action models, making it ideal for maintaining continuous pressure on an enemy.</description>
@@ -673,7 +673,7 @@
     </graphicData>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_LeverActionRifle_Base">
     <defName>VWE_Gun_LeverActionRifle</defName>
     <label>lever-action rifle</label>
     <description>A traditional hunting rifle utilizing a lever-action mechanism. It offers a balance of moderate firepower, decent accuracy, and a fast follow-up shot compared to bolt-action designs, making it a reliable weapon for medium-range engagements.</description>
@@ -763,7 +763,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_LightSMG_Base">
     <defName>VWE_Gun_LightSMG</defName>
     <label>light SMG</label>
     <description>A small, lightweight submachine gun designed for maneuverability in close-quarters combat. It fires a rapid burst of small-caliber rounds, making it highly effective at short range but quickly losing accuracy over distance.</description>
@@ -853,7 +853,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_SMG_Base">
     <defName>VWE_Gun_SMG</defName>
     <label>SMG</label>
     <description>Modern, magazine-fed SMG built for overwhelming close-quarters fire. It uses small-caliber rounds in a long burst, sacrificing long-range accuracy for sheer, close-up firepower.</description>
@@ -943,7 +943,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_HMG_Base">
     <defName>VWE_Gun_HMG</defName>
     <label>HMG</label>
     <description>A gas-operated heavy machine gun. Its massive frame and long barrel make it extremely heavy and slow to maneuver, but it delivers devastatingly long bursts of heavy-caliber fire, designed to suppress and tear through armored targets and groups of enemies.</description>
@@ -1038,7 +1038,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_ServiceRifle_Base">
     <defName>VWE_Gun_ServiceRifle</defName>
     <label>service rifle</label>
     <description>A versatile and rugged assault rifle widely used around the galaxy by militia forces and mercenaries.\n\nNot as powerful as an assault rifle, but deliver 4 shot bursts.</description>
@@ -1128,7 +1128,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_BattleRifle_Base">
     <defName>VWE_Gun_BattleRifle</defName>
     <label>battle rifle</label>
     <description>A gas-operated rifle designed to deliver a powerful, accurate shot in medium-to-long-range engagements. It uses a heavier caliber round than a standard assault rifle, sacrificing burst size for superior damage and armor penetration.</description>
@@ -1218,7 +1218,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_Carbine_Base">
     <defName>VWE_Gun_Carbine</defName>
     <label>carbine</label>
     <description>A general-purpose gas-operated assault rifle, slightly shortened and lighter for enhanced maneuverability. It fires an intermediate-caliber round in a long burst, offering good close-to-medium range accuracy but sacrificing long-range precision for superior handling.</description>
@@ -1308,7 +1308,7 @@
     </graphicData>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_MarksmanRifle_Base">
     <defName>VWE_Gun_MarksmanRifle</defName>
     <label>marksman rifle</label>
     <description>A specialized, semi-automatic rifle. It fires a powerful round with higher velocity than a standard assault rifle, offering an excellent balance of long-range precision and a faster rate of follow-up shots.</description>
@@ -1397,7 +1397,7 @@
     </graphicData>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_AntiMaterialRifle_Base">
     <defName>VWE_Gun_AntiMaterialRifle</defName>
     <label>anti-materiel rifle</label>
     <description>Devastating, heavy-caliber bolt-action rifle designed to engage fortified positions and armored targets. It fires an exceptionally large round for superior damage and penetration at extreme ranges. Due to its weight and recoil, it's physically demanding and requires a long aiming period before it can be accurately fired.</description>
@@ -1474,7 +1474,7 @@
   </ThingDef>
 
   <!-- Trench Gun -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_TrenchGun_Base">
     <defName>VWE_TrenchGun</defName>
     <label>trench gun</label>
     <description>A modernized pump-action shotgun for close-quarters trench warfare. Solid construction and a short barrel enable rapid firing and maneuvering, delivering a devastating blast of buckshot at short range.</description>

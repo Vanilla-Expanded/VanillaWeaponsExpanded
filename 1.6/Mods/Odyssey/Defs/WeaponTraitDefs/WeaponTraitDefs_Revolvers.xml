@@ -1,6 +1,160 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- Revolver -->
-
+	<WeaponTraitDef>
+		<defName>VWE_RecoilOpMechanism</defName>
+		<label>recoil-Op mechanism</label>
+		<description>This weapon fires a rapid 3-round burst. The uncontrollable recoil limits the weapon's effective range and severely reduces accuracy at medium and long distances.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_Revolvers</weaponCategory>
+		<statFactors>
+			<RangedWeapon_RangeMultiplier>0.9</RangedWeapon_RangeMultiplier>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>90</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>automatic</li>
+			<li>cyclic</li>
+			<li>uncontrollabe</li>
+			<li>storming</li>
+			<li>recoil-op</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<verbsOverride>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_Revolver</defaultProjectile>
+						<warmupTime>0.3</warmupTime>
+						<range>25.9</range>
+						<soundCast>Shot_Revolver</soundCast>
+						<soundCastTail>GunTail_Light</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+						<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+						<burstShotCount>3</burstShotCount>
+					</li>
+				</verbsOverride>
+				<verbsOverrides>
+					<li>
+						<key>VWE_Gun_HandCannon_Unique</key>
+						<value>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>VWE_Bullet_HandCannon</defaultProjectile>
+								<warmupTime>0.366666</warmupTime>
+								<range>23.9</range>
+								<soundCast>VWE_Shot_Handcannon</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+								<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+								<burstShotCount>3</burstShotCount>
+							</li>
+						</value>
+					</li>
+				</verbsOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 	
+	<WeaponTraitDef>
+		<defName>VWE_BuntlineBarrel</defName>
+		<label>buntline barrel</label>
+		<description>This weapon features an extended barrel that significantly increases range and accuracy. However, the added weight makes the weapon slower to aim.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Pistol</weaponCategory>
+		<statFactors>
+			
+			<AccuracyLong>1.3</AccuracyLong>
+		</statFactors>
+		<exclusionTags>
+      <li>Barrel</li>
+    </exclusionTags>
+		<statOffsets>
+			<RangedWeapon_RangeMultiplier>0.5</RangedWeapon_RangeMultiplier>
+			<RangedWeapon_WarmupMultiplier>0.25</RangedWeapon_WarmupMultiplier>
+			<MarketValue>60</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>buntline</li>
+			<li>long-barrel</li>
+			<li>carbine</li>
+			<li>extended</li>
+			
+		</traitAdjectives>
+		
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef>
+		<defName>VWE_SnakeShotLoads</defName>
+		<label>snake-shot loads</label>
+		<description>This weapon fires spread-shot pellets instead of solid slugs. It provides a major accuracy boost at close range, but deals less damage and has zero armor penetration.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_Revolvers</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<statFactors>
+			<RangedWeapon_ArmorPenetrationMultiplier>0</RangedWeapon_ArmorPenetrationMultiplier>
+			<AccuracyTouch>1.4</AccuracyTouch>
+			<AccuracyShort>1.3</AccuracyShort>
+			<RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>30</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>snake-shot</li>
+			<li>pellet</li>
+			<li>dusting</li>
+			<li>scattering</li>
+			
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>VWE_Revolver_SnakeShotLoads</projectileOverride>
+				<projectileOverrides>
+					<li>
+						<key>VWE_Gun_HandCannon_Unique</key>
+						<value>VWE_Revolver_SnakeShotLoads_Heavy</value>
+					</li>
+					
+				</projectileOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_TopBreakAction</defName>
+		<label>top-break action</label>
+		<description>This weapon features a hinged frame that breaks open for rapid casing ejection. It reloads significantly faster than a standard model, but the mechanism makes the weapon fragile and prone to breaking.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_Revolvers</weaponCategory>
+		<workerClass>VEF.Weapons.WeaponTraitWorker_Extended</workerClass>
+		<exclusionTags>
+			<li>VWE_HitPoints</li>
+		</exclusionTags>
+		<statFactors>
+			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+			<MaxHitPoints>0.6</MaxHitPoints>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>35</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>hinged</li>
+			<li>top-break</li>
+			<li>snapping</li>
+			<li>fragile</li>
+			
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<refreshMaxHitPointsStat>true</refreshMaxHitPointsStat>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 </Defs>

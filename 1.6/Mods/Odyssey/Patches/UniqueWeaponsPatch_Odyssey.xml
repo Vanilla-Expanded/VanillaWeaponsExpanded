@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_Revolver_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					<li>VWE_Revolvers</li>
+					
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+</Patch>
