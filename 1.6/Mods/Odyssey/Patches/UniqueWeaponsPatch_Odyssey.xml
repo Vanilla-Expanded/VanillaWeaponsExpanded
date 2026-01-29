@@ -9,8 +9,80 @@
 					
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_ChainShotgun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					<li>VWE_FireSelector</li>
+					
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_HeavySMG_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					<li>VWE_FireSelector</li>
+					<li>VWE_SaturationFeed</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_AssaultRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					<li>VWE_FireSelector</li>
+					<li>VWE_SaturationFeed</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_ChargeRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					<li>VWE_FireSelector</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_LMG_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					
+					<li>VWE_HeavyMachineguns</li>
+					<li>VWE_HeavyMachinegunsNoMinigun</li>
+					<li>VWE_Bipods</li>
+					<li>VWE_SaturationFeed</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_Minigun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					
+					<li>VWE_HeavyMachineguns</li>
+					<li>VWE_Bipods</li>
+					<li>VWE_SaturationFeed</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_SniperRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					<li>VWE_Bipods</li>
+				</value>
+			</li>
+			
 			
 		</operations>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "Gun_HellcatRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>VWE_FireSelector</li>
+						<li>VWE_SaturationFeed</li>
+					</value>
+				</li>
+			</operations>
+		</match>
 	</Operation>
 	
 </Patch>

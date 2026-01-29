@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Heavy -->
+	<WeaponTraitDef>
+		<defName>VWE_WaterCooled</defName>
+		<label>water-cooled</label>
+		<description>This weapon is encased in a heavy, liquid-filled cooling jacket. It prevents overheating, allowing for much faster sustained fire, but drastically increases the weapon's weight.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_HeavyMachineguns</weaponCategory>
+	
+		<statFactors>
+			 <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
+			 <Mass>1.6</Mass>
+		</statFactors>
+		<exclusionTags>
+			<li>Weight</li>
+		</exclusionTags>
+		<equippedHediffs>
+			<li>VWE_ReducedMoveSpeed</li>
+		</equippedHediffs>
+		<statOffsets>
+			<MarketValue>60</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>cooled</li>
+			<li>jacketed</li>
+			<li>heavy</li>
+			<li>sustained</li>
+			<li>fluid</li>
+		</traitAdjectives>
+		
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef>
+		<defName>VWE_Bipod</defName>
+		<label>bipod</label>
+		<description>This weapon features a heavy deployable bipod. It provides extreme stability and accuracy at long range, but the setup time nearly doubles the time it takes to aim.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_Bipods</weaponCategory>
+	
+		<statFactors>
+			 <AccuracyMedium>1.4</AccuracyMedium>
+			<AccuracyLong>1.5</AccuracyLong>
+			 <RangedWeapon_WarmupMultiplier>1.5</RangedWeapon_WarmupMultiplier>
+		</statFactors>
+		
+		<statOffsets>
+			<MarketValue>70</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>mounted</li>
+			<li>entrenched</li>
+			<li>defensive</li>
+			<li>static</li>
+			<li>bipod</li>
+		</traitAdjectives>
+		
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_SaturationFeed</defName>
+		<label>saturation feed</label>
+		<description>This weapon has a modified feed mechanism designed to put as much lead in the air as possible. It doubles the number of shots per burst, but the violent vibration reduces accuracy significantly.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_SaturationFeed</weaponCategory>
+	
+		<statFactors>
+		<AccuracyShort>0.7</AccuracyShort>
+			 <AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.6</AccuracyLong>
+			
+		</statFactors>
+		<burstShotCountMultiplier>2</burstShotCountMultiplier>
+		<statOffsets>
+			<MarketValue>90</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>suppressing</li>
+			<li>saturation</li>
+			<li>storm</li>
+			<li>flooding</li>
+			<li>raining</li>
+		</traitAdjectives>
+		
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_ShortStrokePiston</defName>
+		<label>short-stroke piston</label>
+		<description>This weapon uses a modified short-travel bolt carrier that strictly limits burst length. It fires half as many shots per volley, but the mechanism resets twice as fast, allowing for extremely responsive engagement.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_HeavyMachinegunsNoMinigun</weaponCategory>
+	
+		<statFactors>
+		<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statFactors>
+		<burstShotCountMultiplier>0.5</burstShotCountMultiplier>
+		<statOffsets>
+			<MarketValue>50</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>short-stroke</li>
+			<li>staccato</li>
+			<li>rapid-cycle</li>
+			<li>skirmish</li>
+			<li>responsive</li>
+		</traitAdjectives>
+		
+	</WeaponTraitDef>
+</Defs>

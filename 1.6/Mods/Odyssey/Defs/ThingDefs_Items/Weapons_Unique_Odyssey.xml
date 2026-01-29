@@ -554,6 +554,8 @@
 					<li>Sighted</li>
 					<li>BurstFire</li>
 					<li>LowStoppingPower</li>
+					<li>VWE_FireSelector</li>
+					<li>VWE_SaturationFeed</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>SMG</li>
@@ -609,6 +611,10 @@
 					<li>Sighted</li>
 					<li>BurstFire</li>
 					<li>LowStoppingPower</li>
+					<li>VWE_Bipods</li>
+					<li>VWE_HeavyMachineguns</li>
+					<li>VWE_HeavyMachinegunsNoMinigun</li>
+					<li>VWE_SaturationFeed</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>HMG</li>
@@ -666,6 +672,8 @@
 					<li>BurstFire</li>
 					<li>LowStoppingPower</li>
 					<li>Attachable</li>
+					<li>VWE_FireSelector</li>
+					<li>VWE_SaturationFeed</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>service rifle</li>
@@ -725,6 +733,8 @@
 					<li>BurstFire</li>
 					<li>LowStoppingPower</li>
 					<li>Attachable</li>
+					<li>VWE_FireSelector</li>
+					<li>VWE_SaturationFeed</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>battle rifle</li>
@@ -784,6 +794,8 @@
 					<li>BurstFire</li>
 					<li>LowStoppingPower</li>
 					<li>Attachable</li>
+					<li>VWE_FireSelector</li>
+					<li>VWE_SaturationFeed</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>carbine</li>
@@ -840,6 +852,7 @@
 					<li>Gun</li>
 					<li>Scoped</li>
 					<li>Rifle</li>
+					<li>VWE_Bipods</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>precision rifle</li>
@@ -899,6 +912,7 @@
 					<li>Gun</li>
 					<li>Scoped</li>
 					<li>Rifle</li>
+					<li>VWE_Bipods</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>precision rifle</li>
@@ -956,6 +970,7 @@
 					<li>Ranged</li>
 					<li>Gun</li>
 					<li>Sighted</li>
+					<li>Pistol</li>
 					<li>BurstFire</li>
 					<li>PulseCharge</li>
 					<li>LowStoppingPower</li>
@@ -1065,6 +1080,7 @@
 					<li>BurstFire</li>
 					<li>PulseCharge</li>
 					<li>LowStoppingPower</li>
+					<li>VWE_FireSelector</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>charge SMG</li>

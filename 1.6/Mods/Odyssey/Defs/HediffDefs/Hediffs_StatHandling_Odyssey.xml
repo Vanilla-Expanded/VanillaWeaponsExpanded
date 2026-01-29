@@ -51,4 +51,35 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef>
+		<defName>VWE_SkeletonizedFrame</defName>
+		<label>skeletonized frame</label>
+		<description>The weapon held by this person is very light, increasing move speed.</description>
+		<isBad>false</isBad>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<duplicationAllowed>false</duplicationAllowed>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.1</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VWE_IlluminatedSights</defName>
+		<label>illuminated sights</label>
+		<description>The weapon held by this person is fitted with self-illuminating sights.</description>
+		<isBad>false</isBad>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<duplicationAllowed>false</duplicationAllowed>
+		<stages>
+			<li>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</ShootingAccuracyIndoorsDarkOffset>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

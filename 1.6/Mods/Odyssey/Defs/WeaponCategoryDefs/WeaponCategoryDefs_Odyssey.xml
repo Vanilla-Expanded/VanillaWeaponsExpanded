@@ -3,4 +3,19 @@
 	<WeaponCategoryDef>
 		<defName>VWE_Revolvers</defName>
 	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_FireSelector</defName>
+	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_HeavyMachineguns</defName>
+	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_HeavyMachinegunsNoMinigun</defName>
+	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_Bipods</defName>
+	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_SaturationFeed</defName>
+	</WeaponCategoryDef>
 </Defs>

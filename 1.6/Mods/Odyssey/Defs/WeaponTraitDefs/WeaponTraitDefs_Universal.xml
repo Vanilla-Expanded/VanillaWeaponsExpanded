@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Universal -->
+	<WeaponTraitDef>
+		<defName>VWE_SkeletonizedFrame</defName>
+		<label>skeletonized frame</label>
+		<description>This weapon has had non-essential metal drilled out to drastically reduce weight. It increases the user's movement speed, but the structural integrity is compromised, lowering the weapon's maximum durability.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Gun</weaponCategory>
+		<workerClass>VEF.Weapons.WeaponTraitWorker_Extended</workerClass>
+		<statFactors>
+			<MaxHitPoints>0.6</MaxHitPoints>
+			<Mass>0.6</Mass>
+			<AccuracyLong>0.25</AccuracyLong>
+		</statFactors>
+		<exclusionTags>
+			<li>VWE_HitPoints</li>
+			<li>Weight</li>
+		</exclusionTags>
+		<equippedHediffs>
+			<li>VWE_SkeletonizedFrame</li>
+		</equippedHediffs>
+		<statOffsets>
+			<MarketValue>80</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>skeletonized</li>
+			<li>lightened</li>
+			<li>drilled</li>
+			<li>hollow</li>
+			<li>racing</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<refreshMaxHitPointsStat>true</refreshMaxHitPointsStat>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_WeightedStock</defName>
+		<label>weighted stock</label>
+		<description>This weapon features a reinforced, heavy stock designed for bludgeoning. It significantly increases melee damage and stun chance, but the added weight increases aiming time.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Gun</weaponCategory>
+		<statFactors>
+			<MeleeWeapon_DamageMultiplier>2</MeleeWeapon_DamageMultiplier>
+		</statFactors>
+		<exclusionTags>
+			<li>AArmoury_NonAbilityAttachment</li>
+		</exclusionTags>
+		<statOffsets>
+			<MarketValue>35</MarketValue>
+			<Mass>0.5</Mass>
+			<RangedWeapon_WarmupMultiplier>0.15</RangedWeapon_WarmupMultiplier>
+		</statOffsets>
+		<traitAdjectives>
+			<li>heavy</li>
+			<li>bashing</li>
+			<li>reinforced</li>
+			<li>club-stock</li>
+			<li>weighted</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<meleeDamageOverride>VWE_StunBlunt</meleeDamageOverride>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_PortedBarrel</defName>
+		<label>ported barrel</label>
+		<description>This weapon has gas vents drilled near the muzzle to counteract recoil. It reduces the cooldown time between shots, allowing for faster sustained fire, but slightly reduces maximum range.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Gun</weaponCategory>
+		<statFactors>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+		</statFactors>
+		<exclusionTags>
+			<li>Barrel</li>
+		</exclusionTags>
+		<statOffsets>
+			<MarketValue>50</MarketValue>
+			<RangedWeapon_RangeMultiplier>-0.1</RangedWeapon_RangeMultiplier>
+		</statOffsets>
+		<traitAdjectives>
+			<li>ported</li>
+			<li>vented</li>
+			<li>compensated</li>
+			<li>gas-cooled</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_IlluminatedSights</defName>
+		<label>illuminated sights</label>
+		<description>This weapon is fitted with self-illuminating sights. It provides a consistent accuracy increase across all ranges, particularly useful in poor lighting conditions.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Sighted</weaponCategory>
+		<statFactors>
+			<AccuracyTouch>1.1</AccuracyTouch>
+			<AccuracyShort>1.1</AccuracyShort>
+			<AccuracyMedium>1.1</AccuracyMedium>
+			<AccuracyLong>1.1</AccuracyLong>
+		</statFactors>
+		<exclusionTags>
+			<li>Sights</li>
+		</exclusionTags>
+		<equippedHediffs>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VWE_IlluminatedSights</li>
+		</equippedHediffs>
+		<statOffsets>
+			<MarketValue>45</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>glowing</li>
+			<li>illuminated</li>
+			<li>night-sight</li>
+			<li>tritium</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_MatchTrigger</defName>
+		<label>match trigger</label>
+		<description>This weapon features a finely tuned, sensitive trigger mechanism. It improves accuracy at medium and long ranges, but requires a deliberate, gentle squeeze, which slightly increases aiming time.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Gun</weaponCategory>
+		<statFactors>
+		
+			<AccuracyMedium>1.15</AccuracyMedium>
+			<AccuracyLong>1.2</AccuracyLong>
+		</statFactors>
+		<exclusionTags>
+			<li>Sights</li>
+		</exclusionTags>
+		<statOffsets>
+			<RangedWeapon_WarmupMultiplier>0.15</RangedWeapon_WarmupMultiplier>
+			<MarketValue>60</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>match-grade</li>
+			<li>hair-trigger</li>
+			<li>tuned</li>
+			<li>custom-trigger</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_FireSelector</defName>
+		<label>fire selector</label>
+		<description>This weapon has been modified to fire controlled, semi-automatic shots rather than fully automatic sprays. It fires fewer shots per burst, but gains a massive accuracy boost at medium and long ranges.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_FireSelector</weaponCategory>
+		<statFactors>
+		
+			<AccuracyMedium>1.3</AccuracyMedium>
+			<AccuracyLong>1.4</AccuracyLong>
+		</statFactors>
+		<burstShotCountMultiplier>0</burstShotCountMultiplier>
+		<statOffsets>
+			
+			<MarketValue>55</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>select-fire</li>
+			<li>disciplined</li>
+			<li>marksman</li>
+			<li>controlled</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+</Defs>

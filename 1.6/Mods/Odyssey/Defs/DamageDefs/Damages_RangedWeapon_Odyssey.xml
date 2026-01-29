@@ -17,8 +17,22 @@
 			<li>
 				<hediff>VWE_ExtraPain</hediff>
 				<severityPerDamageDealt>1</severityPerDamageDealt>
-				
 			</li>
 		</additionalHediffs>
+	</DamageDef>
+	<DamageDef ParentName="BluntBase">
+		<defName>VWE_StunBlunt</defName>
+		<bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+			<points>
+				<li>(0.24, 0.20)</li>
+				<li>(0.7, 1)</li>
+			</points>
+		</bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+		<bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+			<points>
+				<li>(0.6, 0)</li>
+				<li>(1, 0.15)</li>
+			</points>
+		</bluntStunChancePerDamagePctOfCorePartToBodyCurve>
 	</DamageDef>
 </Defs>
