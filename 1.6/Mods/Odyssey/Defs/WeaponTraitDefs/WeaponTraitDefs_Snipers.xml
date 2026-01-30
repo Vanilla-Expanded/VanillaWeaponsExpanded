@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Snipers -->
+	<WeaponTraitDef>
+		<defName>VWE_UraniumSlug</defName>
+		<label>uranium slug</label>
+		<description>This weapon fires ultra-dense uranium slugs, giving it immense armor-penetrating capabilities, though the heavy recoil increases the time between shots.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_SniperAndAntiMateriel</weaponCategory>
+		<statFactors>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+		</statFactors>
+		<exclusionTags>
+			<li>Sights</li>
+		</exclusionTags>
+		<statOffsets>
+			<MarketValue>80</MarketValue>
+			<RangedWeapon_ArmorPenetrationMultiplier>0.5</RangedWeapon_ArmorPenetrationMultiplier>
+			<RangedWeapon_DamageMultiplier>0.15</RangedWeapon_DamageMultiplier>
+		</statOffsets>
+		<traitAdjectives>
+			<li>anti-tank</li>
+			<li>slug</li>
+			<li>uranium</li>
+			<li>dense</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_StraightPullAction</defName>
+		<label>straight-pull action</label>
+		<description>This weapon uses a linear bolt mechanism to drastically reduce cooldown time, though it compromises long-range stability.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_SniperAndAntiMateriel</weaponCategory>
+		<statFactors>
+			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+			<AccuracyLong>0.85</AccuracyLong>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>65</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>straight-pull</li>
+			<li>rapid-bolt</li>
+			<li>skirmisher</li>
+			<li>fast-cycle</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_AccelerationRail</defName>
+		<label>acceleration rail</label>
+		<description>Retrofitted with a pulse-charge rail system, this weapon fires a single, high-velocity energy bolt that drastically improves damage and armor penetration.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_SniperAndAntiMateriel</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<statFactors>
+			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+			<AccuracyLong>0.85</AccuracyLong>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>150</MarketValue>
+			<RangedWeapon_DamageMultiplier>0.5</RangedWeapon_DamageMultiplier>
+			<RangedWeapon_ArmorPenetrationMultiplier>0.3</RangedWeapon_ArmorPenetrationMultiplier>
+		</statOffsets>
+		<traitAdjectives>
+			<li>charged</li>
+			<li>pulse</li>
+			<li>rail-assisted</li>
+			<li>retrofitted</li>
+			<li>hybrid</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>VWE_Bullet_ChargeLance</projectileOverride>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_CantedIronSights</defName>
+		<label>canted iron sights</label>
+		<description>This weapon includes a secondary sight mounted at a 45-degree angle, allowing the sniper to effectively engage targets at close range without using the scope.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_AllVESnipers</weaponCategory>
+		<statFactors>
+			<AccuracyTouch>1.8</AccuracyTouch>
+			<AccuracyShort>1.5</AccuracyShort>
+			<AccuracyLong>0.9</AccuracyLong>
+		</statFactors>
+		<exclusionTags>
+			<li>Sights</li>
+		</exclusionTags>
+		<statOffsets>
+			<MarketValue>45</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>canted</li>
+			<li>CQB</li>
+			<li>skirmish</li>
+			<li>hybrid</li>
+			<li>tactical</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_FixedTeleLens</defName>
+		<label>fixed tele-lens</label>
+		<description>This weapon is fitted with extreme magnification optics that significantly extend effective range but render the weapon completely unable to target enemies within a large minimum radius.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_AllVESnipers</weaponCategory>
+		<exclusionTags>
+			<li>Sights</li>
+		</exclusionTags>
+		<statOffsets>
+			<MarketValue>70</MarketValue>
+			<RangedWeapon_RangeMultiplier>2</RangedWeapon_RangeMultiplier>
+		</statOffsets>
+		<traitAdjectives>
+			<li>telescopic</li>
+			<li>fixed-zoom</li>
+			<li>far-sighted</li>
+			<li>observatory</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<verbsOverride>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_SniperRifle</defaultProjectile>
+						<warmupTime>3.5</warmupTime>
+						<range>44.9</range>
+						<minRange>19.9</minRange>
+						<soundCast>Shot_SniperRifle</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbsOverride>
+				<verbsOverrides>
+					<li>
+						<key>VWE_Gun_AntiMaterialRifle_Unique</key>
+						<value>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_AntiMaterialRifle</defaultProjectile>
+								<warmupTime>5</warmupTime>
+								<range>44.9</range>
+								<minRange>19.9</minRange>
+								<soundCast>VWE_Shot_AntiMaterialRifle</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</value>
+					</li>
+					<li>
+						<key>VWE_Gun_MarksmanRifle_Unique</key>
+						<value>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_MarksmanRifle</defaultProjectile>
+								<warmupTime>2.166666</warmupTime>
+								<range>42.9</range>
+								<minRange>19.9</minRange>
+								<soundCast>VWE_Shot_MarksmanRifle</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</value>
+					</li>
+				</verbsOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+</Defs>

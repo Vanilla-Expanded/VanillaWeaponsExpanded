@@ -853,6 +853,7 @@
 					<li>Scoped</li>
 					<li>Rifle</li>
 					<li>VWE_Bipods</li>
+					<li>VWE_AllVESnipers</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>precision rifle</li>
@@ -913,6 +914,8 @@
 					<li>Scoped</li>
 					<li>Rifle</li>
 					<li>VWE_Bipods</li>
+					<li>VWE_SniperAndAntiMateriel</li>
+					<li>VWE_AllVESnipers</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>precision rifle</li>

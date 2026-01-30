@@ -18,4 +18,10 @@
 	<WeaponCategoryDef>
 		<defName>VWE_SaturationFeed</defName>
 	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_SniperAndAntiMateriel</defName>
+	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_AllVESnipers</defName>
+	</WeaponCategoryDef>
 </Defs>

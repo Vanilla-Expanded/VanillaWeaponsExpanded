@@ -62,6 +62,8 @@
 				<xpath>Defs/ThingDef[defName = "Gun_SniperRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
 				<value>
 					<li>VWE_Bipods</li>
+					<li>VWE_SniperAndAntiMateriel</li>
+					<li>VWE_AllVESnipers</li>
 				</value>
 			</li>
 			
