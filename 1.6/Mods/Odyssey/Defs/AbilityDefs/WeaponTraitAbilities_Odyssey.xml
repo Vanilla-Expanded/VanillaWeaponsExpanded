@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>VWE_LaunchFlare</defName>
+		<label>fire disruptor flare</label>
+		<description>Fire a disruptor flare over a medium distance. Can be reloaded using bioferrite.</description>
+		<iconPath>UI/Gizmos/LaunchFlarestrike</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>33.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>FlareLaunch</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Grenade_DisruptorFlare</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>VWE_UnderbarrelShotgun</defName>
+		<label>fire shotgun</label>
+		<description>Fire a blast of buckshot from the underslung shotgun.</description>
+		<iconPath>UI/Gizmos/LaunchShotgunShot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>75</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>15.9</range>
+			<warmupTime>0.9</warmupTime>
+			<soundCast>Shot_Shotgun</soundCast>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+			</targetParams>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Bullet_Shotgun</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>

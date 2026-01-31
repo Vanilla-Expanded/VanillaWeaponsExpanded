@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Charge -->
+	<WeaponTraitDef>
+		<defName>VWE_HyperCapacitor</defName>
+		<label>hyper-capacitor</label>
+		<description>This weapon replaces a standard mechanical firing pin or gas system with an electronic rail-assist powered by a massive capacitor. It eliminates the mechanical cycling time between shots almost entirely, but the capacitor takes a significantly long time to charge before the first shot can be fired.</description>
+		<commonality>1</commonality>
+		<weaponCategory>PulseCharge</weaponCategory>
+		<statFactors>
+			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+			<RangedWeapon_WarmupMultiplier>3</RangedWeapon_WarmupMultiplier>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>85</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>rail-assist</li>
+			<li>spooling</li>
+			<li>capacitor</li>
+			<li>hyper</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_Ultracoils</defName>
+		<label>ultracoils</label>
+		<description>This weapon features extended, super-conductive acceleration rails that launch projectiles at hypersonic velocities, drastically increasing range and armor penetration at the cost of cycle time.</description>
+		<commonality>1</commonality>
+		<weaponCategory>PulseCharge</weaponCategory>
+		<exclusionTags>
+			<li>Barrel</li>
+		</exclusionTags>
+		<statFactors>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>110</MarketValue>
+			<RangedWeapon_RangeMultiplier>0.35</RangedWeapon_RangeMultiplier>
+			<RangedWeapon_ArmorPenetrationMultiplier>0.5</RangedWeapon_ArmorPenetrationMultiplier>
+		</statOffsets>
+		<traitAdjectives>
+			<li>hyper-velocity</li>
+			<li>rail</li>
+			<li>accelerated</li>
+			<li>gauss</li>
+			<li>piercing</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_CryptoCoatedRails</defName>
+		<label>crypto-coated rails</label>
+		<description>The magnetic acceleration rails are coated in the crypto-particle cooling jacket, preventing the overheating common in charge weaponry and allowing for a much faster rate of fire.</description>
+		<commonality>1</commonality>
+		<weaponCategory>PulseCharge</weaponCategory>
+		<statFactors>
+			<RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
+			<Mass>1.2</Mass>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>100</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>cooled</li>
+			<li>rapid</li>
+			<li>cycled</li>
+			<li>vented</li>
+			<li>frosty</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_VectorCompensator</defName>
+		<label>vector compensator</label>
+		<description>The barrel is lined with micro-magnetic coils that adjust the projectile's trajectory in mid-air. This "smart bullet" system actively corrects aim error, granting perfect accuracy, but requires lighter, smaller projectiles to function.</description>
+		<commonality>1</commonality>
+		<weaponCategory>PulseCharge</weaponCategory>
+		<statFactors>
+			<RangedWeapon_DamageMultiplier>0.5</RangedWeapon_DamageMultiplier>
+		</statFactors>
+		<statOffsets>
+			<MarketValue>250</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>vectoring</li>
+			<li>smart</li>
+			<li>guided</li>
+			<li>seeking</li>
+			<li>correcting</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>VWE_Bullet_ChargeRifle_Homing</projectileOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>VWE_Bullet_ChargeLance_Homing</value>
+					</li>
+					<li>
+						<key>VWE_Gun_ChargePistol_Unique</key>
+						<value>VWE_Bullet_ChargePistol_Homing</value>
+					</li>
+					<li>
+						<key>VWE_Gun_ChargeShotgun_Unique</key>
+						<value>VWE_Bullet_ChargeShotgun_Homing</value>
+					</li>
+					<li>
+						<key>VWE_Gun_ChargeSMG_Unique</key>
+						<value>VWE_Bullet_ChargeSMG_Homing</value>
+					</li>
+					<li>
+						<key>VWE_Gun_ChargeLMG_Unique</key>
+						<value>VWE_Bullet_ChargeLMG_Homing</value>
+					</li>
+					<li>
+						<key>VWE_Gun_ChargeMinigun_Unique</key>
+						<value>VWE_Bullet_ChargeMinigun_Homing</value>
+					</li>
+					
+				</projectileOverrides>
+				
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+</Defs>

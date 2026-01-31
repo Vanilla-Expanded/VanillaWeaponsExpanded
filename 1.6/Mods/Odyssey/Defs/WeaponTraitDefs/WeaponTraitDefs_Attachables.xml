@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Attachables -->
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>VWE_UnderbarrelFlarestriker</defName>
+		<label>underbarrel flarestriker</label>
+		<description>This weapon is equipped with an integrated under-barrel flare launcher. It fires bioferrite-fueled disruptor flares that illuminate the area and cause local psychic disruption.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>flaring</li>
+			<li>disruptor</li>
+			<li>bio-flare</li>
+			<li>illuminating</li>
+			<li>psychic</li>
+		</traitAdjectives>
+		<statOffsets>
+			<MarketValue>140</MarketValue>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityWithCharges>
+					<abilityDef>VWE_LaunchFlare</abilityDef>
+					<maxCharges>4</maxCharges>
+					<soundReload>Standard_Reload</soundReload>
+					<chargeNoun>flare</chargeNoun>
+					<ammoDef>Bioferrite</ammoDef>
+					<ammoCountPerCharge>5</ammoCountPerCharge>
+					<baseReloadTicks>60</baseReloadTicks>
+				</abilityWithCharges>
+				
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef>
+		<defName>VWE_UnderbarrelShotgun</defName>
+		<label>underbarrel shotgun</label>
+		<description>This weapon features a stripped-down, under-barrel shotgun attachment. It provides the user with a secondary firing option specifically designed to breach doors or clear close-quarters threats without switching weapons.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>breaching</li>
+			<li>masterkey</li>
+			<li>door-kicker</li>
+			<li>underslung</li>
+			
+		</traitAdjectives>
+		<statOffsets>
+			<MarketValue>95</MarketValue>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityToAdd>VWE_UnderbarrelShotgun</abilityToAdd>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+</Defs>
