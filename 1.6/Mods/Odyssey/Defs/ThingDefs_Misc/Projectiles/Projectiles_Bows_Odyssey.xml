@@ -32,11 +32,11 @@
 			<explosionRadius>1.9</explosionRadius>
 			<speed>60</speed>
 		</projectile>
-		<comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="VWE_BaseExplosiveProjectile">
 		<defName>VWE_BlastTips_Bolt</defName>
@@ -53,11 +53,11 @@
 			<explosionRadius>1.9</explosionRadius>
 			<speed>65</speed>
 		</projectile>
-		<comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="VWE_BaseExplosiveProjectile">
@@ -75,11 +75,11 @@
 			<explosionRadius>1.9</explosionRadius>
 			 <speed>65</speed>
 		</projectile>
-		<comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	
 	

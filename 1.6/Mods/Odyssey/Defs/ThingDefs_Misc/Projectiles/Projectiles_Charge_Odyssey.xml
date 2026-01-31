@@ -44,10 +44,13 @@
 				<homingCorrectionTickRate>1</homingCorrectionTickRate>
 				<initialDispersionFromTarget>3</initialDispersionFromTarget>
 			</li>
+			
+		</comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>VWE_Bullet_ChargePistol_Homing</defName>
@@ -72,10 +75,13 @@
 				<homingCorrectionTickRate>1</homingCorrectionTickRate>
 				<initialDispersionFromTarget>3</initialDispersionFromTarget>
 			</li>
+			
+		</comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>VWE_Bullet_ChargeShotgun_Homing</defName>
@@ -100,10 +106,13 @@
 				<homingCorrectionTickRate>1</homingCorrectionTickRate>
 				<initialDispersionFromTarget>3</initialDispersionFromTarget>
 			</li>
+			
+		</comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>VWE_Bullet_ChargeSMG_Homing</defName>
@@ -128,10 +137,13 @@
 				<homingCorrectionTickRate>1</homingCorrectionTickRate>
 				<initialDispersionFromTarget>3</initialDispersionFromTarget>
 			</li>
+			
+		</comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>VWE_Bullet_ChargeLMG_Homing</defName>
@@ -156,10 +168,13 @@
 				<homingCorrectionTickRate>1</homingCorrectionTickRate>
 				<initialDispersionFromTarget>3</initialDispersionFromTarget>
 			</li>
+			
+		</comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>VWE_Bullet_ChargeMinigun_Homing</defName>
@@ -182,9 +197,12 @@
 				<homingCorrectionTickRate>1</homingCorrectionTickRate>
 				<initialDispersionFromTarget>3</initialDispersionFromTarget>
 			</li>
+			
+		</comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 </Defs>

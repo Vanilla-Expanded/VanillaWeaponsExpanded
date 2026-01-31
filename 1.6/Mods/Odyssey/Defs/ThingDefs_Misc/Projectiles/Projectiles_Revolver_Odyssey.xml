@@ -13,11 +13,11 @@
 			<stoppingPower>1</stoppingPower>
 			<speed>55</speed>
 		</projectile>
-		<comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>VWE_Revolver_SnakeShotLoads_Heavy</defName>
@@ -33,10 +33,10 @@
 			<stoppingPower>1.5</stoppingPower>
 			<speed>45</speed>
 		</projectile>
-		<comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 </Defs>

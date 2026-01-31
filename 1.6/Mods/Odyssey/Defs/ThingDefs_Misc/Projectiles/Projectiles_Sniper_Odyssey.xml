@@ -15,10 +15,10 @@
 			<stoppingPower>1.5</stoppingPower>
 			<speed>120</speed>
 		</projectile>
-		<comps>
+		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 </Defs>
