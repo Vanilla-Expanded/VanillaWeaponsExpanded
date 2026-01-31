@@ -24,4 +24,7 @@
 	<WeaponCategoryDef>
 		<defName>VWE_AllVESnipers</defName>
 	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_ChargeWeaponsWithoutBlasters</defName>
+	</WeaponCategoryDef>
 </Defs>

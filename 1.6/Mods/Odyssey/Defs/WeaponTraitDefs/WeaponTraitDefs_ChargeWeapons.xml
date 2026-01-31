@@ -51,7 +51,7 @@
 		<label>crypto-coated rails</label>
 		<description>The magnetic acceleration rails are coated in the crypto-particle cooling jacket, preventing the overheating common in charge weaponry and allowing for a much faster rate of fire.</description>
 		<commonality>1</commonality>
-		<weaponCategory>PulseCharge</weaponCategory>
+		<weaponCategory>VWE_ChargeWeaponsWithoutBlasters</weaponCategory>
 		<statFactors>
 			<RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
 			<Mass>1.2</Mass>
@@ -72,7 +72,7 @@
 		<label>vector compensator</label>
 		<description>The barrel is lined with micro-magnetic coils that adjust the projectile's trajectory in mid-air. This "smart bullet" system actively corrects aim error, granting perfect accuracy, but requires lighter, smaller projectiles to function.</description>
 		<commonality>1</commonality>
-		<weaponCategory>PulseCharge</weaponCategory>
+		<weaponCategory>VWE_ChargeWeaponsWithoutBlasters</weaponCategory>
 		<statFactors>
 			<RangedWeapon_DamageMultiplier>0.5</RangedWeapon_DamageMultiplier>
 		</statFactors>

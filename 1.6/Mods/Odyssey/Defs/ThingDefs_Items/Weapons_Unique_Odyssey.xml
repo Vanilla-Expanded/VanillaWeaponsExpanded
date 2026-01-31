@@ -978,6 +978,7 @@
 					<li>BurstFire</li>
 					<li>PulseCharge</li>
 					<li>LowStoppingPower</li>
+					<li>VWE_ChargeWeaponsWithoutBlasters</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>charge pistol</li>
@@ -1030,6 +1031,7 @@
 					<li>Gun</li>
 					<li>Shotgun</li>
 					<li>PulseCharge</li>
+					<li>VWE_ChargeWeaponsWithoutBlasters</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>charge shotgun</li>
@@ -1085,6 +1087,7 @@
 					<li>PulseCharge</li>
 					<li>LowStoppingPower</li>
 					<li>VWE_FireSelector</li>
+					<li>VWE_ChargeWeaponsWithoutBlasters</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>charge SMG</li>

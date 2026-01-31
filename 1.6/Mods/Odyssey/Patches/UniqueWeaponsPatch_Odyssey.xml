@@ -36,6 +36,14 @@
 				<xpath>Defs/ThingDef[defName = "Gun_ChargeRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
 				<value>
 					<li>VWE_FireSelector</li>
+					<li>VWE_ChargeWeaponsWithoutBlasters</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gun_ChargeLance_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+				<value>
+					
+					<li>VWE_ChargeWeaponsWithoutBlasters</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
