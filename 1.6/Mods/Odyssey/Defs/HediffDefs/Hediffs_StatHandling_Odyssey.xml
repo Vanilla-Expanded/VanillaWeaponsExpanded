@@ -82,4 +82,30 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef>
+		<defName>VWE_ComfortGrip</defName>
+		<label>comfort grip</label>
+		<description>The weapon held by this person is fitted with a custom-molded, ergonomic handle wrapped in high-quality leather.</description>
+		<isBad>false</isBad>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<duplicationAllowed>false</duplicationAllowed>
+		<stages>
+			<li>
+				
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VWE_GrimNotches</defName>
+		<label>grim notches</label>
+		<description>The weapon held by this person is covered in crude, carved notches, each tallying a life taken by a previous owner.</description>
+		<isBad>false</isBad>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<duplicationAllowed>false</duplicationAllowed>
+		<stages>
+			<li>
+				
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

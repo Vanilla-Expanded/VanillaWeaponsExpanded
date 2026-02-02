@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Mood Affecting -->
+	<WeaponTraitDef>
+		<defName>VWE_ComfortGrip</defName>
+		<label>comfort grip</label>
+		<description>This weapon is fitted with a custom-molded, ergonomic handle wrapped in high-quality leather. It feels reassuringly secure in the hand, filling the user with a sense of pride and accomplishment.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Gun</weaponCategory>
+		<canGenerateAlone>false</canGenerateAlone>
+		<equippedHediffs>
+			<li>VWE_ComfortGrip</li>
+		</equippedHediffs>
+		<exclusionTags>
+			<li>Mood</li>
+		</exclusionTags>
+		<statOffsets>
+			<MarketValue>50</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>comfortable</li>
+			<li>ergonomic</li>
+			<li>reassuring</li>
+			<li>loved</li>
+			<li>trusted</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef>
+		<defName>VWE_GrimNotches</defName>
+		<label>grim notches</label>
+		<description>This weapon is covered in crude, carved notches, each tallying a life taken by a previous owner. It seems there’s one, and nineteen more of them. The handle feels rough and disturbing to hold, filling the user with a sense of dread and guilt.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Gun</weaponCategory>
+		<canGenerateAlone>false</canGenerateAlone>
+		<equippedHediffs>
+			<li>VWE_GrimNotches</li>
+		</equippedHediffs>
+		<exclusionTags>
+			<li>Mood</li>
+		</exclusionTags>
+		<statFactors>
+			<MarketValue>0.9</MarketValue>
+		</statFactors>
+		<traitAdjectives>
+			<li>notched</li>
+			<li>grim</li>
+			<li>marked</li>
+			<li>tallying</li>
+			<li>haunted</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+</Defs>
