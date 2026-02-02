@@ -17,7 +17,6 @@
       <Mass>2</Mass>
     </statBases>
     <equippedStatOffsets>
-      <!-- Todo: scale with quality -->
       <ConstructionSpeed>0.05</ConstructionSpeed>
     </equippedStatOffsets>
     <equippedAngleOffset>-25</equippedAngleOffset>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Plant work speed -->
+  <!-- Insert <parts> node, if needed. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/parts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="PlantWorkSpeed"]</xpath>
+      <value>
+        <parts />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- Add our offsets part. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/parts</xpath>
+    <value>
+      <li Class="VEF.Things.StatPart_Quality_Offset_AsPercentage">
+        <offsetAwful>-0.03</offsetAwful>
+        <offsetPoor>-0.02</offsetPoor>
+        <offsetNormal>0.00</offsetNormal>
+        <offsetGood>0.02</offsetGood>
+        <offsetExcellent>0.04</offsetExcellent>
+        <offsetMasterwork>0.06</offsetMasterwork>
+        <offsetLegendary>0.07</offsetLegendary>
+        <thingDefs>
+          <li>VWE_MeleeWeapon_Axe</li>
+        </thingDefs>
+      </li>
+    </value>
+  </Operation>
+
+  <!-- Construction speed -->
+  <!-- Insert <parts> node, if needed. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/StatDef[defName="ConstructionSpeed"]/parts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="ConstructionSpeed"]</xpath>
+      <value>
+        <parts />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- Add our offsets part. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/StatDef[defName="ConstructionSpeed"]/parts</xpath>
+    <value>
+      <li Class="VEF.Things.StatPart_Quality_Offset_AsPercentage">
+        <offsetAwful>-0.05</offsetAwful>
+        <offsetPoor>-0.03</offsetPoor>
+        <offsetNormal>0.00</offsetNormal>
+        <offsetGood>0.02</offsetGood>
+        <offsetExcellent>0.05</offsetExcellent>
+        <offsetMasterwork>0.10</offsetMasterwork>
+        <offsetLegendary>0.15</offsetLegendary>
+        <thingDefs>
+          <li>VWE_MeleeWeapon_Hammer</li>
+          <li>VWE_MeleeWeapon_Shovel</li>
+        </thingDefs>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

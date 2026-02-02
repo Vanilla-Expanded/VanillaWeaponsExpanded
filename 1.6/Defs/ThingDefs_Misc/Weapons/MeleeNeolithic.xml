@@ -25,8 +25,7 @@
       <Mass>1</Mass>
     </statBases>
     <equippedStatOffsets>
-      <!-- TODO: Look into making this based on quality. -->
-      <PlantWorkSpeed>0.05</PlantWorkSpeed>
+      <PlantWorkSpeed>0.03</PlantWorkSpeed>
     </equippedStatOffsets>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
