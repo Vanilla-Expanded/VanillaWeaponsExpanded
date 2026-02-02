@@ -4,7 +4,6 @@
   <!-- First Aid for Combat Extended and Multiplayer API -->
   <Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Multiplayer</li>
 		<li>Combat Extended</li>
 	</mods>
     <nomatch Class="PatchOperationSequence">
