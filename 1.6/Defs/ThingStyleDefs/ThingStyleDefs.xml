@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingStyleDef>
+    <defName>VWE_ChargeLance_PlayerCrafted</defName>
+    <graphicData>
+      <texPath>NewThings/ChargeLance_PlayerMade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+  
+</Defs>

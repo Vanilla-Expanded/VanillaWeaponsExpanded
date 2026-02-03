@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_ChargeLance"]</xpath>
+    <value>
+      <li Class="VEF.Things.ThingDefExtension">
+        <playerCraftedStyles>
+          <li>
+            <styleDef>VWE_ChargeLance_PlayerCrafted</styleDef>
+          </li>
+        </playerCraftedStyles>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>
