@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Negative -->
+	<WeaponTraitDef>
+		<defName>VWE_WornRifling</defName>
+		<label>worn rifling</label>
+		<description>The spiral grooves inside this weapon's barrel have been worn smooth by overuse. It is significantly less accurate at all ranges.</description>
+		<canGenerateAlone>false</canGenerateAlone>
+		<commonality>0.5</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		<statFactors>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<MarketValue>0.6</MarketValue>
+		</statFactors>
+		<exclusionTags>
+			<li>Barrel</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>worn</li>
+			<li>smooth-bore</li>
+			<li>balding</li>
+			<li>used</li>
+			<li>old</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li MayRequire="sarg.alphaarmoury" Class="AlphaArmoury.WeaponTraitExtension">
+				<createTraitKit>false</createTraitKit>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_GritClogged</defName>
+		<label>grit-clogged</label>
+		<description>The internal mechanism is filled with sand, dirt, or dried grease. It cycles sluggishly, significantly increasing the time between shots.</description>
+		<canGenerateAlone>false</canGenerateAlone>
+		<commonality>0.5</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		<statFactors>
+			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+			<MarketValue>0.7</MarketValue>
+		</statFactors>
+		<traitAdjectives>
+			<li>dirty</li>
+			<li>gritty</li>
+			<li>jammed</li>
+			<li>sandy</li>
+			<li>sticky</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li MayRequire="sarg.alphaarmoury" Class="AlphaArmoury.WeaponTraitExtension">
+				<createTraitKit>false</createTraitKit>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_HeavyScrap</defName>
+		<label>heavy scrap</label>
+		<description>This weapon has been repaired using heavy, improper scrap metal components. It is cumbersome to carry and takes much longer to aim.</description>
+		<canGenerateAlone>false</canGenerateAlone>
+		<commonality>0.5</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		<statFactors>
+			<MarketValue>0.5</MarketValue>
+			<Mass>1.5</Mass>
+		</statFactors>
+		<statOffsets>
+			<RangedWeapon_WarmupMultiplier>0.3</RangedWeapon_WarmupMultiplier>
+		</statOffsets>
+		<exclusionTags>
+			<li>Weight</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>heavy</li>
+			<li>scrap</li>
+			<li>leaden</li>
+			<li>bulky</li>
+			<li>patched</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li MayRequire="sarg.alphaarmoury" Class="AlphaArmoury.WeaponTraitExtension">
+				<createTraitKit>false</createTraitKit>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_TrainingConversion</defName>
+		<label>training conversion</label>
+		<description>This weapon has been permanently modified to fire non-lethal blunt pellets for target practice. While it causes pain and bruising, it lacks the stopping power and penetration to be useful in a real firefight.</description>
+		<canGenerateAlone>false</canGenerateAlone>
+		<commonality>0.5</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		<damageDefOverride>Blunt</damageDefOverride>
+		<statFactors>
+			<RangedWeapon_DamageMultiplier>0.25</RangedWeapon_DamageMultiplier>
+			<MarketValue>0.75</MarketValue>
+			<RangedWeapon_ArmorPenetrationMultiplier>0</RangedWeapon_ArmorPenetrationMultiplier>
+		</statFactors>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>practice</li>
+			<li>training</li>
+			<li>rubber</li>
+			<li>blunt</li>
+			<li>harmless</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_Janky</defName>
+		<label>janky</label>
+		<description>This weapon's internal mechanisms are loose and poorly fitted. It suffers from inconsistent cycling issues, meaning the cooldown duration is completely randomized after every single burst.</description>
+		<canGenerateAlone>false</canGenerateAlone>
+		<commonality>0.5</commonality>
+		<weaponCategory>Gun</weaponCategory>
+		<statFactors>
+			<MarketValue>0.65</MarketValue>
+		</statFactors>
+		<traitAdjectives>
+			<li>janky</li>
+			<li>stuttering</li>
+			<li>loose</li>
+			<li>rattle</li>
+			<li>unreliable</li>
+			<li>jamming</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<coolDownRange>0.5~3</coolDownRange>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+</Defs>

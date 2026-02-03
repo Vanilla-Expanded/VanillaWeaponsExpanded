@@ -916,6 +916,7 @@
 					<li>VWE_Bipods</li>
 					<li>VWE_SniperAndAntiMateriel</li>
 					<li>VWE_AllVESnipers</li>
+					<li>VWE_AcidFlechettes</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>precision rifle</li>
@@ -1032,6 +1033,7 @@
 					<li>Shotgun</li>
 					<li>PulseCharge</li>
 					<li>VWE_ChargeWeaponsWithoutBlasters</li>
+					<li>VWE_ThumpRetrofittable</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>charge shotgun</li>

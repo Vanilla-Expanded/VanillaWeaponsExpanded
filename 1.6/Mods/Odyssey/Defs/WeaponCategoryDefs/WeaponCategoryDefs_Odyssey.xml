@@ -27,4 +27,10 @@
 	<WeaponCategoryDef>
 		<defName>VWE_ChargeWeaponsWithoutBlasters</defName>
 	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_ThumpRetrofittable</defName>
+	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_AcidFlechettes</defName>
+	</WeaponCategoryDef>
 </Defs>

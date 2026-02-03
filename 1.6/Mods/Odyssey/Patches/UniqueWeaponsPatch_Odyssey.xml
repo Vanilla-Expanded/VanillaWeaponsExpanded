@@ -37,6 +37,7 @@
 				<value>
 					<li>VWE_FireSelector</li>
 					<li>VWE_ChargeWeaponsWithoutBlasters</li>
+					<li>VWE_ThumpRetrofittable</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -44,6 +45,7 @@
 				<value>
 					
 					<li>VWE_ChargeWeaponsWithoutBlasters</li>
+					<li>VWE_AcidFlechettes</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -72,6 +74,7 @@
 					<li>VWE_Bipods</li>
 					<li>VWE_SniperAndAntiMateriel</li>
 					<li>VWE_AllVESnipers</li>
+					<li>VWE_AcidFlechettes</li>
 				</value>
 			</li>
 			

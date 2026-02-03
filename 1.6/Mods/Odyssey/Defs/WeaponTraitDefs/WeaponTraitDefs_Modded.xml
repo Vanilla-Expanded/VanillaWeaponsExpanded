@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Modded -->
+	<WeaponTraitDef MayRequire="OskarPotocki.VFE.Empire">
+		<defName>VWE_ThumpRetrofit</defName>
+		<label>thump retrofit</label>
+		<description>This weapon incorporates reverse-engineered mechanoid technology to fire heavy, blunt-force energy slugs that devastate structures and armor at the cost of range.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_ThumpRetrofittable</weaponCategory>
+		<statFactors>
+			<RangedWeapon_RangeMultiplier>0.6</RangedWeapon_RangeMultiplier>
+			<RangedWeapon_DamageMultiplier>0.5</RangedWeapon_DamageMultiplier>
+		</statFactors>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<additionalStoppingPower>1</additionalStoppingPower>
+		<statOffsets>
+			<MarketValue>180</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>thumping</li>
+			<li>siege</li>
+			<li>kinetic</li>
+			<li>heavy</li>
+			<li>crushing</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>VFEE_Bullet_ChargeThumper</projectileOverride>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="OskarPotocki.VFE.Empire">
+		<defName>VWE_AcidInjectorFlechettes</defName>
+		<label>acid-injector flechettes</label>
+		<description>This weapon has been re-barreled to fire fin-stabilized acid-injector flechettes. These rounds cause horrific internal dissolution in organic targets but are useless against mechanoids.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_AcidFlechettes</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<statOffsets>
+			<MarketValue>250</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>fletcher</li>
+			<li>acid-needle</li>
+			<li>injecting</li>
+			<li>dissolving</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>VFEE_Bullet_FletcherDart</projectileOverride>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="OskarPotocki.VFE.Medieval2">
+		<defName>VWE_HighAngleDraw</defName>
+		<label>high-angle draw</label>
+		<description>This weapon is strung for extreme parabolic arcing, allowing arrows to be lobbed over walls and obstacles to hit unseen targets, though it is impossible to aim precisely.</description>
+		<commonality>1</commonality>
+		<weaponCategory>Bow</weaponCategory>
+		<statOffsets>
+			<MarketValue>50</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>arcing</li>
+			<li>parabolic</li>
+			<li>lobbing</li>
+			<li>indirect</li>
+			<li>siege</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<verbsOverride>
+					<li Class="VFEMedieval.VerbProperties_Warbow">
+						<verbClass>Verb_Shoot</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Arrow_Short</defaultProjectile>
+						<warmupTime>1.35</warmupTime>
+						<range>22.9</range>
+						<soundCast>Bow_Small</soundCast>
+					</li>
+				</verbsOverride>
+				<verbsOverrides>
+					<li>
+						<key>VWE_Bow_Crossbow_Unique</key>
+						<value>
+							<li Class="VFEMedieval.VerbProperties_Warbow">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>VWE_Arrow_Bolt</defaultProjectile>
+								<warmupTime>1.5</warmupTime>
+								<range>29.9</range>
+								<soundCast>VWE_Shot_Crossbow</soundCast>
+							</li>
+						</value>
+					</li>
+					<li>
+						<key>VWE_Bow_Long_Unique</key>
+						<value>
+							<li Class="VFEMedieval.VerbProperties_Warbow">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>VWE_Arrow_Long</defaultProjectile>
+								<warmupTime>2.5</warmupTime>
+								<range>36.9</range>
+								<soundCast>Bow_Large</soundCast>
+							</li>
+						</value>
+					</li>
+					<li>
+						<key>VWE_Bow_Compound_Unique</key>
+						<value>
+							<li Class="VFEMedieval.VerbProperties_Warbow">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>VWE_Arrow_Compound</defaultProjectile>
+								<warmupTime>1.5</warmupTime>
+								<range>29.9</range>
+								<soundCast>VWE_Bow_Compound</soundCast>
+							</li>
+						</value>
+					</li>
+				</verbsOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="VanillaExpanded.VWEFT">
+		<defName>VWE_LuckyShots</defName>
+		<label>lucky shots</label>
+		<description>This weapon's action is tuned for occasional moments of perfect alignment, granting a chance for shots to bypass defenses and inflict significant bonus damage.</description>
+		<canGenerateAlone>false</canGenerateAlone>
+		<commonality>0.5</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		<extraDamages>
+			<li>
+				<def>Bullet</def>
+				<amount>10</amount>
+				<chance>0.1</chance>
+			</li>
+		</extraDamages>
+		<statOffsets>
+			<MarketValue>90</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>critical</li>
+			<li>vicious</li>
+			<li>deadly</li>
+			<li>tuned</li>
+			<li>lucky</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="VanillaExpanded.VWEMS">
+		<defName>VWE_MakeshiftTrait</defName>
+		<label>makeshift</label>
+		<description>This weapon is cobbled together from mismatched parts with a faulty sear mechanism. It is wildly unpredictable; sometimes it fails to fire entirely, while other times it accidentally discharges a double-length burst.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		<canGenerateAlone>false</canGenerateAlone>
+		<statFactors>
+			<MarketValue>0.6</MarketValue>
+		</statFactors>
+		<traitAdjectives>
+			<li>makeshift</li>
+			<li>cobbled</li>
+			<li>jury-rigged</li>
+			<li>scrap</li>
+			<li>unpredictable</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<burstShotCountRange>
+					<li>0</li>
+					<li>0.5</li>
+					<li>1</li>
+					<li>1.5</li>
+					<li>2</li>
+				</burstShotCountRange>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+</Defs>
