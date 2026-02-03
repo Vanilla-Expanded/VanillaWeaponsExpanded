@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <VEF.OptionalFeatures.ModDef>
+        <defName>VWE_OptionalFeatures</defName>
+        <label>Vanilla Weapons Expanded</label>
+        <description>VE Framework optional features for Vanilla Weapons Expanded</description>
+        <Activate>
+            <li>WeaponTraitDefMechanics</li>
+        </Activate>
+    </VEF.OptionalFeatures.ModDef>
+</Defs>

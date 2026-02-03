@@ -181,4 +181,27 @@
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="vanillaquestsexpanded.deadlife">
+		<defName>VWE_AncientTrait</defName>
+		<label>ancient</label>
+		<description>This weapon is a relic from a bygone era, its internal stress fractures held together by mere luck. It functions normally for a limited time, but after a set number of shots, the mechanism will shatter completely and the weapon will be destroyed.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		
+		<statFactors>
+			<MarketValue>0.5</MarketValue>
+		</statFactors>
+		<traitAdjectives>
+			<li>ancient</li>
+			<li>relic</li>
+			<li>fragile</li>
+			<li>crumbling</li>
+			<li>finite</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<limitedUses>100</limitedUses>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 </Defs>
