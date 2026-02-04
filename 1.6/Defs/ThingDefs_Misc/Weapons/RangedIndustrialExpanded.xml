@@ -89,7 +89,7 @@
   <!-- Heavy Revolver -->
   <ThingDef ParentName="BaseBullet">
     <defName>VWE_Bullet_HandCannon</defName>
-    <label>hand cannon bullet</label>
+    <label>heavy revolver bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>

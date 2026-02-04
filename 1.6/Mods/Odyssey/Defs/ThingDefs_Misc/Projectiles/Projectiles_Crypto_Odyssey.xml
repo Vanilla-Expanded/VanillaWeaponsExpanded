@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet</defName>
+		<label>crypto bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_Revolver</defName>
+		<label>crypto revolver bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_BoltActionRifle</defName>
+		<label>crypto bolt-action rifle bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_HeavySMG</defName>
+		<label>crypto heavy SMG bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>48</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_LMG</defName>
+		<label>crypto LMG bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>46</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_AssaultRifle</defName>
+		<label>crypto assault rifle bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_SniperRifle</defName>
+		<label>crypto sniper rifle bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_Minigun</defName>
+		<label>crypto minigun bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_HandCannon</defName>
+		<label>crypto heavy revolver bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.22</armorPenetrationBase>
+			<speed>45</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_CombatHandgun</defName>
+		<label>crypto combat handgun bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_SemiAutomaticRifle</defName>
+		<label>crypto semi-automatic rifle bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.27</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_LeverActionRifle</defName>
+		<label>crypto lever-action rifle bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_LightSMG</defName>
+		<label>crypto light SMG bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>60</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_SMG</defName>
+		<label>crypto SMG bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.12</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>50</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_HMG</defName>
+		<label>crypto HMG bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.22</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>48</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_ServiceRifle</defName>
+		<label>crypto service rifle bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>65</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_BattleRifle</defName>
+		<label>crypto battle rifle bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>65</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_Carbine</defName>
+		<label>crypto carbine bullet</label>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_MarksmanRifle</defName>
+		<label>crypto marksman rifle bullet</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>21</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>90</speed>
+		</projectile>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_Cryptobullet_AntiMaterialRifle</defName>
+		<label>crypto anti-materiel impact shell</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>120</speed>
+		</projectile>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/VWE_Cryptobullet</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -55,6 +55,30 @@
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="OskarPotocki.VFE.Deserters">
+		<defName>VWE_DeserterMarkings</defName>
+		<label>deserter markings</label>
+		<description>This weapon bears defaced Imperial crests; equipping it in the presence of Imperial caravans or visitors will be recognized as treason, causing an immediate and severe drop in relations.</description>
+		<canGenerateAlone>false</canGenerateAlone>
+		<commonality>0.5</commonality>
+		<weaponCategory>Gun</weaponCategory>
+		
+		<statFactors>
+			<MarketValue>0.25</MarketValue>
+		</statFactors>
+		<traitAdjectives>
+			<li>traitor</li>
+			<li>deserter</li>
+			<li>stolen</li>
+			<li>defaced</li>
+			<li>illicit</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<relationsImpactWithEmpire>-50</relationsImpactWithEmpire>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 	<WeaponTraitDef MayRequire="OskarPotocki.VFE.Medieval2">
 		<defName>VWE_HighAngleDraw</defName>
 		<label>high-angle draw</label>
@@ -187,7 +211,6 @@
 		<description>This weapon is a relic from a bygone era, its internal stress fractures held together by mere luck. It functions normally for a limited time, but after a set number of shots, the mechanism will shatter completely and the weapon will be destroyed.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>BulletFiring</weaponCategory>
-		
 		<statFactors>
 			<MarketValue>0.5</MarketValue>
 		</statFactors>
@@ -203,5 +226,131 @@
 				<limitedUses>100</limitedUses>
 			</li>
 		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="vanillaquestsexpanded.cryptoforge">
+		<defName>VWE_CryptoRounds</defName>
+		<label>crypto rounds</label>
+		<description>This weapon fires rounds coated in active cryptoparticles that induce a rapid stasis-freeze effect on impact.</description>
+		<commonality>1</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<statOffsets>
+			<MarketValue>130</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>crypto</li>
+			<li>stasis</li>
+			<li>freezing</li>
+			<li>preserving</li>
+			<li>absolute</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>VWE_Cryptobullet</projectileOverride>
+				<soundOverride>VQE_Shot_Cryptobolter</soundOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>VWE_Cryptobullet_Revolver</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>VWE_Cryptobullet_BoltActionRifle</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>VWE_Cryptobullet_HeavySMG</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>VWE_Cryptobullet_LMG</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>VWE_Cryptobullet_AssaultRifle</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>VWE_Cryptobullet_SniperRifle</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>VWE_Cryptobullet_Minigun</value>
+					</li>
+					<li>
+						<key>VWE_Gun_HandCannon_Unique</key>
+						<value>VWE_Cryptobullet_HandCannon</value>
+					</li>
+					<li>
+						<key>VWE_Gun_CombatHandgun_Unique</key>
+						<value>VWE_Cryptobullet_CombatHandgun</value>
+					</li>
+					<li>
+						<key>VWE_Gun_SemiAutomaticRifle_Unique</key>
+						<value>VWE_Cryptobullet_SemiAutomaticRifle</value>
+					</li>
+					<li>
+						<key>VWE_Gun_LeverActionRifle_Unique</key>
+						<value>VWE_Cryptobullet_LeverActionRifle</value>
+					</li>
+					<li>
+						<key>VWE_Gun_LightSMG_Unique</key>
+						<value>VWE_Cryptobullet_LightSMG</value>
+					</li>
+					<li>
+						<key>VWE_Gun_SMG_Unique</key>
+						<value>VWE_Cryptobullet_SMG</value>
+					</li>
+					<li>
+						<key>VWE_Gun_HMG_Unique</key>
+						<value>VWE_Cryptobullet_HMG</value>
+					</li>
+					<li>
+						<key>VWE_Gun_ServiceRifle_Unique</key>
+						<value>VWE_Cryptobullet_ServiceRifle</value>
+					</li>
+					<li>
+						<key>VWE_Gun_BattleRifle_Unique</key>
+						<value>VWE_Cryptobullet_BattleRifle</value>
+					</li>
+					<li>
+						<key>VWE_Gun_Carbine_Unique</key>
+						<value>VWE_Cryptobullet_Carbine</value>
+					</li>
+					<li>
+						<key>VWE_Gun_MarksmanRifle_Unique</key>
+						<value>VWE_Cryptobullet_MarksmanRifle</value>
+					</li>
+					<li>
+						<key>VWE_Gun_AntiMaterialRifle_Unique</key>
+						<value>VWE_Cryptobullet_AntiMaterialRifle</value>
+					</li>
+				</projectileOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="VanillaExpanded.VAnomalyEInsanity">
+		<defName>VWE_VoidInscriptions</defName>
+		<label>void inscriptions</label>
+		<description>This weapon is etched with shifting, non-euclidean glyphs that whisper to the wielder, continually draining their mental stability while equipped.</description>
+		<commonality>0.5</commonality>
+		<canGenerateAlone>false</canGenerateAlone>
+		<weaponCategory>Gun</weaponCategory>
+		<statFactors>
+			<MarketValue>0.75</MarketValue>
+		</statFactors>
+		<equippedHediffs>
+			<li>VWE_VoidInscriptions</li>
+		</equippedHediffs>
+		<traitAdjectives>
+			<li>void</li>
+			<li>accursed</li>
+			<li>whispering</li>
+			<li>maddening</li>
+			<li>eldritch</li>
+		</traitAdjectives>
+		
 	</WeaponTraitDef>
 </Defs>
