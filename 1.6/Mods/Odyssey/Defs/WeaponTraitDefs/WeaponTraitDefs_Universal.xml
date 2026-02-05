@@ -165,4 +165,34 @@
 			<li>controlled</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>VWE_Akimbo</defName>
+		<label>akimbo</label>
+		<description>This weapon is paired with a matching duplicate, allowing the colonist to dual-wield. It doubles the number of rounds fired in a burst and doubles the fire rate, but aiming two weapons simultaneously significantly reduces accuracy.</description>
+		<commonality>1</commonality>
+		<weaponCategory>VWE_Akimbo</weaponCategory>
+		<statFactors>
+		
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<MarketValue>2</MarketValue>
+		</statFactors>
+		<burstShotCountMultiplier>2</burstShotCountMultiplier>
+		<burstShotSpeedMultiplier>2</burstShotSpeedMultiplier>
+		
+		<traitAdjectives>
+			<li>dual</li>
+			<li>twin</li>
+			<li>akimbo</li>
+			<li>double</li>
+			<li>paired</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<drawDuplicate>true</drawDuplicate>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 </Defs>

@@ -33,4 +33,7 @@
 	<WeaponCategoryDef>
 		<defName>VWE_AcidFlechettes</defName>
 	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>VWE_Akimbo</defName>
+	</WeaponCategoryDef>
 </Defs>

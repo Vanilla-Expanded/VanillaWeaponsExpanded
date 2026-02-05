@@ -6,6 +6,7 @@
 				<xpath>Defs/ThingDef[defName = "Gun_Revolver_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
 				<value>
 					<li>VWE_Revolvers</li>
+					<li>VWE_Akimbo</li>
 					
 				</value>
 			</li>
@@ -21,6 +22,7 @@
 				<value>
 					<li>VWE_FireSelector</li>
 					<li>VWE_SaturationFeed</li>
+					<li>VWE_Akimbo</li>
 				</value>
 			</li>
 			
