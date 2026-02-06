@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <VEF.DefMigrationDef>
+    <defName>VWE_MigrateMovedOrRemovedWeapons</defName>
+
+    <replacedDefs>
+      <ThingDef>
+        <li>
+          <original>VWE_Gun_ChargeSniperRifle</original>
+          <replacement>Gun_ChargeLance</replacement>
+        </li>
+      </ThingDef>
+    </replacedDefs>
+
+    <removedDefs>
+      <ThingDef>
+        <li>VWE_Tool_Whip</li>
+        <li>VWE_WhipSlash</li>
+        <li>VWE_Gun_FireExtinguisher</li>
+        <li>VWE_Bullet_FireExtinguisher</li>
+        <li>VWE_Bullet_ChargeSniperRifle</li>
+        <!-- TODO: Add a VFE-M2 replacement for musket/flintlock -->
+        <li>VWE_Gun_Musket</li>
+        <li>VWE_Gun_Flintlock</li>
+      </ThingDef>
+      <!-- Research projects still error out due to how they're loaded (dictionary without working lists). -->
+    </removedDefs>
+  </VEF.DefMigrationDef>
+
+</Defs>
