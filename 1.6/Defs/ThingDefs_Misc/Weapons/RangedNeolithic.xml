@@ -27,7 +27,6 @@
     <stuffCategories>
       <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>5</costStuffCount>
     <weaponTags>
       <li>NeolithicRangedBasic</li>
       <li>NoRelic</li>
@@ -35,11 +34,7 @@
     <weaponClasses>
       <li>Ranged</li>
     </weaponClasses>
-    <recipeMaker>
-      <recipeUsers>
-        <li>CraftingSpot</li>
-      </recipeUsers>
-    </recipeMaker>
+    <recipeMaker Inherit="False" IsNull="True" />
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -82,17 +77,23 @@
     </projectile>
   </ThingDef>
 
-  <!-- TODO: Make custom worker for stone chunk to stuff. -->
   <RecipeDef>
     <defName>VWE_MakeThrowingRocks</defName>
     <label>make throwing rocks</label>
     <description>Chip rock chunks into usable weapons.</description>
-    <workAmount>500</workAmount>
+    <jobString>Chipping rock chunks into usable weapon.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
     <effectWorking>CutStone</effectWorking>
     <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-    <workSkill>Crafting</workSkill>
+    <descriptionHyperlinks>
+      <ThingDef>VWE_Throwing_Rocks</ThingDef>
+    </descriptionHyperlinks>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
     <ingredients>
+      <!-- Chunks need to be first for chunksAsStuff -->
       <li>
         <filter>
           <categories>
@@ -107,9 +108,16 @@
         <li>StoneChunks</li>
       </categories>
     </fixedIngredientFilter>
-    <recipeUsers>
-      <li>CraftingSpot</li>
-    </recipeUsers>
+    <products>
+      <VWE_Throwing_Rocks>1</VWE_Throwing_Rocks>
+    </products>
+    <!-- Needed for chunksAsStuff -->
+    <productHasIngredientStuff>true</productHasIngredientStuff>
+    <modExtensions>
+      <li Class="VEF.Cooking.Recipe_Extension">
+        <chunksAsStuff>true</chunksAsStuff>
+      </li>
+    </modExtensions>
   </RecipeDef>
 
 </Defs>
