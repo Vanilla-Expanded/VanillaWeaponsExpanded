@@ -50,9 +50,6 @@
 			<Plasteel>30</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
-		<weaponTags>
-			<li>SpacerGun</li>
-		</weaponTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -68,6 +65,13 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <!-- Lighter than charge rifle, which is considered light. -->
+      <li>RangedLight</li>
+    </weaponClasses>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -108,6 +112,7 @@
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_ChargeShotgun_Base">
 		<defName>VWE_Gun_ChargeShotgun</defName>
 		<label>charge shotgun</label>
@@ -143,7 +148,12 @@
 		</costList>
 		<weaponTags>
 			<li>SpacerGun</li>
+      <!-- Not including ShortShots, the weapon would be given to ordinary raiders (like basic pigskins). -->
 		</weaponTags>
+    <weaponClasses>
+      <!-- Lighter than charge rifle, which is considered light... but no shotguns are considered light, so not including the tag. -->
+      <li>ShortShots</li>
+    </weaponClasses>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -196,6 +206,7 @@
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_ChargeSMG_Base">
 		<defName>VWE_Gun_ChargeSMG</defName>
 		<label>charge SMG</label>
@@ -230,7 +241,13 @@
 		</costList>
 		<weaponTags>
 			<li>SpacerGun</li>
+      <!-- Not including ShortShots, the weapon would be given to ordinary raiders (like basic pigskins). -->
 		</weaponTags>
+    <weaponClasses>
+      <!-- Lighter than charge rifle, which is considered light. -->
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -285,6 +302,7 @@
 			<speed>90</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_ChargeLMG_Base">
 		<defName>VWE_Gun_ChargeLMG</defName>
 		<label>charge blaster</label>
@@ -319,7 +337,11 @@
 		</costList>
 		<weaponTags>
 			<li>SpacerGun</li>
+      <!-- Not including GunHeavy, as it would give this gun to normal mercenaries. -->
 		</weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -362,6 +384,7 @@
 			<speed>80</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_ChargeMinigun_Base">
 		<defName>VWE_Gun_ChargeMinigun</defName>
 		<label>heavy charge blaster</label>
@@ -400,7 +423,11 @@
 		</costList>
 		<weaponTags>
 			<li>SpacerGun</li>
+      <!-- Not including GunHeavy, as it would give this gun to normal mercenaries. -->
 		</weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

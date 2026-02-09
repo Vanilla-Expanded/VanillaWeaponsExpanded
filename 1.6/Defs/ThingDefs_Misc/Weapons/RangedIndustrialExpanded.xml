@@ -148,13 +148,13 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags>
       <li>SimpleGun</li>
       <li>Revolver</li>
     </weaponTags>
     <weaponClasses>
-
+      <li>RangedLight</li>
+      <!-- No short shots, range longer than heavy SMG (longest range short shots weapon in vanilla) -->
     </weaponClasses>
     <tools>
       <li>
@@ -242,10 +242,14 @@
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+      <!-- No short shots, range longer than heavy SMG (longest range short shots weapon in vanilla) -->
+    </weaponClasses>
     <tools>
       <li>
         <label>grip</label>
@@ -333,7 +337,6 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>Gun</li>
       <li>ShortShots</li>
       <li>PumpShotgun</li>
     </weaponTags>
@@ -432,10 +435,15 @@
         </targetParams>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags>
       <li>GunHeavy</li>
+      <li>GrenadeDestructive</li>
+      <li>EmpireGrenadeDestructive</li>
     </weaponTags>
+    <weaponClasses>
+      <!-- Matches all the other launchers -->
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>stock</label>
@@ -512,6 +520,13 @@
         </targetParams>
       </li>
     </verbs>
+    <weaponTags>
+      <li>Flamethrower</li>
+    </weaponTags>
+    <weaponClasses>
+      <!-- Matching incendiary launcher and incinerator (so no short shots) -->
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>4.66</explosiveRadius>
@@ -633,6 +648,9 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+    <weaponClasses>
+      <!-- No long shots, range  longer than lever-action rifle (shortest range long shots weapon in vanilla) -->
+    </weaponClasses>
     <tools>
       <li>
         <label>stock</label>
@@ -717,11 +735,8 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: fill up -->
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
     <weaponClasses>
+      <!-- No long shots, range  longer than lever-action rifle (shortest range long shots weapon in vanilla) -->
     </weaponClasses>
     <tools>
       <li>
@@ -809,10 +824,14 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill up -->
     <weaponTags>
+      <li>ShortShots</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedLight</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>grip</label>
@@ -899,10 +918,12 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+      <li>ShortShots</li>
     </weaponTags>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>grip</label>
@@ -993,11 +1014,13 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
       <li>GunHeavy</li>
     </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>stock</label>
@@ -1084,9 +1107,9 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
     </weaponTags>
     <tools>
       <li>
@@ -1174,9 +1197,9 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
     </weaponTags>
     <tools>
       <li>
@@ -1264,9 +1287,9 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
     </weaponTags>
     <tools>
       <li>
@@ -1353,10 +1376,15 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
-    <weaponTags>
+    <weaponTags Inherit="False">
+      <!-- We don't inherit the "Gun" tag. -->
       <li>SniperRifle</li>
     </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <!-- Lighter than a sniper rifle, so not including the RangedHeavy tag. -->
+      <!-- The 2 classes overlap a bit, so there isn't a hard cutoff point for either. -->
+    </weaponClasses>
     <tools>
       <li>
         <label>stock</label>
@@ -1446,10 +1474,13 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <!-- TODO: Fill -->
     <weaponTags Inherit="False">
       <li>SniperRifle</li>
     </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>stock</label>
@@ -1519,7 +1550,6 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>Gun</li>
       <li>ShortShots</li>
       <li>PumpShotgun</li>
     </weaponTags>

@@ -24,9 +24,8 @@
     <costList>
       <Steel>65</Steel>
     </costList>
-    <!-- TODO: Definitely check what Destructive is used for, so it's not used for breach raid or osmething -->
     <weaponTags>
-      <li>GrenadeDestructive</li>
+      <li>GrenadeSmoke</li>
     </weaponTags>
     <thingCategories>
       <li>Grenades</li>
@@ -39,7 +38,7 @@
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
         <warmupTime>1.5</warmupTime>
-        <!-- TODO: Check what it does -->
+        <!-- Technically unused in the game... -->
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -111,7 +110,8 @@
       <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <weaponTags>
-      <li>GrenadeDestructive</li>
+      <!-- Basically, treating this as "GrenadeStun" -->
+      <li>GrenadeEMP</li>
     </weaponTags>
     <thingCategories>
       <li>Grenades</li>

@@ -33,6 +33,7 @@
     </weaponTags>
     <weaponClasses>
       <li>Ranged</li>
+      <li>ShortShots</li>
     </weaponClasses>
     <recipeMaker Inherit="False" IsNull="True" />
     <verbs>

@@ -31,8 +31,14 @@
       </skillRequirements>
     </recipeMaker>
     <weaponTags>
-      <li>GunHeavy</li>
+      <!-- Same tags as triple/doomsday rocket launchers -->
+      <li>Gun</li>
+      <li>GunSingleUse</li>
     </weaponTags>
+    <weaponClasses>
+      <!-- Same tags as triple/doomsday rocket -->
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>

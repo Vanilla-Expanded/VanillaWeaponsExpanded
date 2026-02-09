@@ -27,9 +27,10 @@
     </statBases>
     <weaponTags>
       <li>NeolithicRangedHeavy</li>
-      <li>NeolithicRangedChief</li>
+      <li>NeolithicRangedDecent</li>
     </weaponTags>
-    <weaponClasses>
+    <weaponClasses Inherit="False">
+      <!-- Don't inherit the "Neolithic" tag. -->
       <li>Ranged</li>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -125,6 +126,8 @@
     </weaponTags>
     <weaponClasses>
       <li>Ranged</li>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
     </weaponClasses>
     <recipeMaker>
       <recipeUsers>
@@ -176,6 +179,7 @@
     </graphicData>
     <projectile>
       <flyOverhead>false</flyOverhead>
+<!--      <damageDef>VWE_RangedCut</damageDef>-->
       <damageDef>RangedStab</damageDef>
       <damageAmountBase>6</damageAmountBase>
       <stoppingPower>0.5</stoppingPower>
@@ -211,10 +215,11 @@
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <weaponTags>
-      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedDecent</li>
       <li>NeolithicRangedChief</li>
     </weaponTags>
-    <weaponClasses>
+    <weaponClasses Inherit="False">
+      <!-- Don't inherit the "Neolithic" tag. -->
       <li>Ranged</li>
       <li>RangedHeavy</li>
       <li>LongShots</li>
