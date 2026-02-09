@@ -53,12 +53,11 @@
     </thingSetMakerTags>
     <verbs>
       <li>
-        <verbClass>Verb_ShootOneUse</verbClass>
+        <verbClass>VEF.Weapons.Verb_ShootOneUse_FlyOverhead</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>VWE_Rocket_AntiGrain</defaultProjectile>
         <forcedMissRadius>2.9</forcedMissRadius>
         <burstShotCount>1</burstShotCount>
-        <forcedMissRadius>0.9</forcedMissRadius>
         <warmupTime>3.5</warmupTime>
         <range>36.9</range>
         <soundCast>InfernoCannon_Fire</soundCast>
@@ -69,8 +68,7 @@
           <canTargetPawns>false</canTargetPawns>
         </targetParams>
         <muzzleFlashScale>30</muzzleFlashScale>
-        <ai_AvoidFriendlyFireRadius>44</ai_AvoidFriendlyFireRadius>
-        <minRange>40</minRange>
+        <ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
         <requireLineOfSight>false</requireLineOfSight>
       </li>
     </verbs>
@@ -97,7 +95,7 @@
     </tools>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>9.9</explosiveRadius>
+        <explosiveRadius>1.9</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
       </li>
@@ -114,7 +112,7 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <damageDef>VWE_Shock</damageDef>
+      <damageDef>Bomb</damageDef>
       <damageAmountBase>35</damageAmountBase>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <explosionRadius>1.9</explosionRadius>
