@@ -75,7 +75,13 @@
 		</traitAdjectives>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<relationsImpactWithEmpire>-50</relationsImpactWithEmpire>
+        <factionRelationImpacts>
+          <li>
+            <factionDef>Empire</factionDef>
+            <eventDef>VWE_DeserterMarkings</eventDef>
+            <impact>-50</impact>
+          </li>
+        </factionRelationImpacts>
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HistoryEventDef MayRequire="OskarPotocki.VFE.Deserters">
+    <defName>VWE_DeserterMarkings</defName>
+    <label>weapon with deserter markings</label>
+  </HistoryEventDef>
+
+</Defs>
