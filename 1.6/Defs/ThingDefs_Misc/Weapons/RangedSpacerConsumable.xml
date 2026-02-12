@@ -21,7 +21,6 @@
     <equippedStatOffsets>
       <MoveSpeed>-0.2</MoveSpeed>
     </equippedStatOffsets>
-    <equippedAngleOffset>45</equippedAngleOffset>
     <costList>
       <Plasteel>80</Plasteel>
       <ComponentSpacer>6</ComponentSpacer>
@@ -105,18 +104,18 @@
   <ThingDef ParentName="BaseBullet">
     <defName>VWE_Rocket_AntiGrain</defName>
     <label>antigrain rocket</label>
+    <thingClass>VEF.Weapons.Projectile_TopAttackMissile</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Rocket_Charge</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
       <damageAmountBase>35</damageAmountBase>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <explosionRadius>1.9</explosionRadius>
-      <speed>30</speed>
+      <speed>60</speed>
       <flyOverhead>true</flyOverhead>
     </projectile>
   </ThingDef>
