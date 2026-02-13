@@ -60,6 +60,11 @@
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Baton -->
@@ -118,6 +123,11 @@
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Combat Knife -->
@@ -184,6 +194,11 @@
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 </Defs>

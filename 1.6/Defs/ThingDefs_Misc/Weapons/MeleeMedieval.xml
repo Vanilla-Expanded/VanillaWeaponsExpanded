@@ -60,6 +60,11 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Battle Axe -->
