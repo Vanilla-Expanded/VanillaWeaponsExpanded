@@ -459,4 +459,115 @@
 			</li>
 		</tools>
 	</ThingDef>
+
+  <!-- Charge Missile Launcher -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VWE_Gun_ChargeRocketLauncher</defName>
+    <label>charge missile launcher</label>
+    <description>A portable, shoulder-fired launcher that uses laser targeting to fire an explosive, charged missile high into the air. The projectile follows a ballistic arc, allowing it to bypass cover and strike targets without needing a direct line of sight. Must be used in an unroofed area.</description>
+    <tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>NewThings/ChargeRocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.22</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>18</Mass>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>VWE_LaserTargetingSystems</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>Gun</li>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>VEF.Weapons.Verb_Shoot_FlyOverhead</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VWE_Rocket_AntiGrain</defaultProjectile>
+        <forcedMissRadius>2.9</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <warmupTime>3.5</warmupTime>
+        <range>36.9</range>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+        </targetParams>
+        <muzzleFlashScale>30</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
+        <requireLineOfSight>false</requireLineOfSight>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <armorPenetration>0.13</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <armorPenetration>0.13</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>VWE_Rocket_AntiGrain</defName>
+    <label>antigrain rocket</label>
+    <thingClass>VEF.Weapons.Projectile_TopAttackMissile</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Charge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <explosionRadius>1.9</explosionRadius>
+      <speed>60</speed>
+      <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+
 </Defs>
