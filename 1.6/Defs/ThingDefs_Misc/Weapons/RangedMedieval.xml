@@ -189,7 +189,6 @@
       <damageAmountBase>6</damageAmountBase>
       <stoppingPower>0.5</stoppingPower>
       <armorPenetrationBase>0.1</armorPenetrationBase>
-      <arcHeightFactor>1.5</arcHeightFactor>
       <speed>35</speed>
     </projectile>
   </ThingDef>
