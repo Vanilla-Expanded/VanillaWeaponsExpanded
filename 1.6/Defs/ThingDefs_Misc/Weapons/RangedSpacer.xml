@@ -56,7 +56,6 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>VWE_Bullet_ChargePistol</defaultProjectile>
 				<warmupTime>0.366666</warmupTime>
-				<minRange>1.5</minRange>
 				<range>23.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
