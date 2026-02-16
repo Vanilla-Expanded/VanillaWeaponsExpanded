@@ -60,7 +60,7 @@
 	<AchievementsExpanded.AchievementDef>
 		<defName>superCharged</defName>
 		<label>Supercharged!</label>
-		<description>Craft a legendary charge minigun</description>
+		<description>Craft a legendary heavy charge blaster</description>
 		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ItemCraftTracker">
 			<def>VWE_Gun_ChargeMinigun</def>
