@@ -4,28 +4,37 @@
   <VEF.DefMigrationDef>
     <defName>VWE_MigrateMovedOrRemovedWeapons</defName>
 
-    <replacedDefs>
+    <migratedDefs>
       <ThingDef>
-        <li>
-          <original>VWE_Gun_ChargeSniperRifle</original>
+        <!-- Vanilla replacements -->
+        <VWE_Gun_ChargeSniperRifle>
           <replacement>Gun_ChargeLance</replacement>
-        </li>
-      </ThingDef>
-    </replacedDefs>
-
-    <removedDefs>
-      <ThingDef>
-        <li>VWE_Tool_Whip</li>
-        <li>VWE_WhipSlash</li>
-        <li>VWE_Gun_FireExtinguisher</li>
-        <li>VWE_Bullet_FireExtinguisher</li>
-        <li>VWE_Bullet_ChargeSniperRifle</li>
-        <!-- TODO: Add a VFE-M2 replacement for musket/flintlock -->
-        <li>VWE_Gun_Musket</li>
-        <li>VWE_Gun_Flintlock</li>
+        </VWE_Gun_ChargeSniperRifle>
+        <!-- Migrated to Medieval 2 -->
+        <VWE_Gun_Musket>
+          <replacement>VFEM2_Gun_Musket</replacement>
+          <!-- When migrating (replacement is specified), the original is not marked as removed. -->
+          <!-- Since this is a situation where a replacement may not be present (Medieval 2 not installed), -->
+          <!-- we mark this as to be removed if replacement def is not present (normally this would do nothing). -->
+          <removeIfMissingReplacement>true</removeIfMissingReplacement>
+        </VWE_Gun_Musket>
+        <VWE_Gun_Flintlock>
+          <replacement>VFEM2_Gun_Flintlock</replacement>
+          <!-- When migrating (replacement is specified), the original is not marked as removed. -->
+          <!-- Since this is a situation where a replacement may not be present (Medieval 2 not installed), -->
+          <!-- we mark this as to be removed if replacement def is not present (normally this would do nothing). -->
+          <removeIfMissingReplacement>true</removeIfMissingReplacement>
+        </VWE_Gun_Flintlock>
+        <!-- Removed always -->
+        <VWE_Tool_Whip />
+        <VWE_WhipSlash />
+        <VWE_Gun_FireExtinguisher />
+        <VWE_Bullet_FireExtinguisher />
+        <VWE_Bullet_ChargeSniperRifle /> <!-- Don't bother migrating projectiles, only weapon. -->
+        <Bullet_Leadball /> <!-- Flintlock/musket projectile -->
       </ThingDef>
       <!-- Research projects still error out due to how they're loaded (dictionary without working lists). -->
-    </removedDefs>
+    </migratedDefs>
   </VEF.DefMigrationDef>
 
 </Defs>
