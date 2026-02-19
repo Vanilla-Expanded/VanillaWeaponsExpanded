@@ -3,26 +3,26 @@
 	
 	<AchievementsExpanded.AchievementDef>
 		<defName>napoleonBonaparty</defName>
-		<label>Napoleon BonaPARTY</label>
-		<description>Craft 10 Muskets</description>
+		<label>Entrenched</label>
+		<description>Craft 10 trench guns</description>
 		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ItemCraftTracker">
-			<def>VWE_Gun_Musket</def>
+			<def>VWE_TrenchGun</def>
 			<count>10</count>
 		</tracker>
 		
-		<texPath>Achievements/napoleonBonaparty</texPath>
+		<texPath>Achievements/entrenched</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
 	
 	<AchievementsExpanded.AchievementDef>
 		<defName>poshRockLobber</defName>
 		<label>Posh Rock Lobber</label>
-		<description>Craft jade throwing rocks</description>
+		<description>Craft marble throwing rocks</description>
 		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ItemCraftTracker">
 			<def>VWE_Throwing_Rocks</def>
-			<madeFrom>Jade</madeFrom>
+			<madeFrom>ChunkMarble</madeFrom>
 			<count>1</count>
 		</tracker>
 		
@@ -47,10 +47,10 @@
 	<AchievementsExpanded.AchievementDef>
 		<defName>gunsGallore</defName>
 		<label>Guns Gallore</label>
-		<description>Research Specialized Firearms</description>
+		<description>Research Heavy Weapons</description>
 		<tab>VanillaExpanded_Weapons</tab>
 		<tracker Class="AchievementsExpanded.ResearchTracker">
-			<def>VWE_SpecializedFirearms</def>
+			<def>VWE_HeavyWeapons</def>
 		</tracker>
 		
 		<texPath>Achievements/gunsGallore</texPath>
