@@ -136,6 +136,10 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2.0</drawSize>
     </graphicData>
+    <!-- We need an uiIconPath to make the uiIconOffset have an effect. -->
+    <uiIconPath>NewThings/Poleaxe</uiIconPath>
+    <uiIconOffset>(-0.15, 0.15)</uiIconOffset>
+    <uiIconScale>1.5</uiIconScale>
     <costStuffCount>100</costStuffCount>
     <statBases>
       <WorkToMake>13000</WorkToMake>
