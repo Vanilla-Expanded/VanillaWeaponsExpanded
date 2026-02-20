@@ -128,11 +128,11 @@
 		<soundInteract>Interact_ChargeLance</soundInteract>
 		<statBases>
 			<Mass>3.8</Mass>
-			<AccuracyTouch>0.7</AccuracyTouch>
-			<AccuracyShort>0.67</AccuracyShort>
-			<AccuracyMedium>0.57</AccuracyMedium>
-			<AccuracyLong>0.54</AccuracyLong>
-			<RangedWeapon_Cooldown>1.33333</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.84</AccuracyShort>
+			<AccuracyMedium>0.72</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 			<WorkToMake>45000</WorkToMake>
 		</statBases>
 		<recipeMaker>
@@ -203,8 +203,8 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>16</damageAmountBase>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
 			<stoppingPower>0.5</stoppingPower>
 			<speed>70</speed>
 		</projectile>
@@ -223,7 +223,7 @@
 		<statBases>
 			<Mass>2.6</Mass>
 			<AccuracyTouch>0.75</AccuracyTouch>
-			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyShort>0.78</AccuracyShort>
 			<AccuracyMedium>0.4</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
 			<RangedWeapon_Cooldown>1.933333</RangedWeapon_Cooldown>
@@ -299,7 +299,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>14</damageAmountBase>
 			<armorPenetrationBase>0.22</armorPenetrationBase>
 			<stoppingPower>0.5</stoppingPower>
 			<speed>90</speed>
