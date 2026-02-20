@@ -257,7 +257,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>VWE_Bullet_ChargeSMG</defaultProjectile>
 				<warmupTime>0.833333</warmupTime>
-				<range>19.9</range>
+				<range>16.9</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<soundCast>VWE_Shot_ChargeSMG</soundCast>
