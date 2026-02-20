@@ -323,7 +323,7 @@
 			<AccuracyShort>0.26</AccuracyShort>
 			<AccuracyMedium>0.26</AccuracyMedium>
 			<AccuracyLong>0.18</AccuracyLong>
-			<RangedWeapon_Cooldown>7.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
 			<WorkToMake>85000</WorkToMake>
 		</statBases>
 		<recipeMaker>
@@ -405,9 +405,9 @@
 			<Mass>24</Mass>
 			<AccuracyTouch>0.22</AccuracyTouch>
 			<AccuracyShort>0.3</AccuracyShort>
-			<AccuracyMedium>0.3</AccuracyMedium>
-			<AccuracyLong>0.22</AccuracyLong>
-			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.38</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.25</MoveSpeed>
@@ -563,10 +563,106 @@
       <damageDef>Bomb</damageDef>
       <damageAmountBase>35</damageAmountBase>
       <armorPenetrationBase>0.15</armorPenetrationBase>
-      <explosionRadius>1.9</explosionRadius>
+      <explosionRadius>2.9</explosionRadius>
       <speed>60</speed>
       <flyOverhead>true</flyOverhead>
     </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ChargeSniperRifle</defName>
+    <label>charge sniper slug</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+      <stoppingPower>2.0</stoppingPower>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>150</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/ChargeLanceShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="VWE_Gun_ChargeSniperRifle_Base">
+    <defName>VWE_Gun_ChargeSniperRifle</defName>
+    <label>charge sniper rifle</label>
+    <description>A specialized, high-velocity charge rifle designed for extreme-range engagement with anti-armor capabilities. It channels immense pulse-charge energy into a single, kinetic slug, delivering extremely high damage and armor penetration with pinpoint accuracy at maximum distance. Its bulk requires a stable firing position.</description>
+    <graphicData>
+      <texPath>NewThings/ChargeSniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.34</drawSize>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <WorkToMake>70000</WorkToMake>
+      <Mass>5.5</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>LaserTargetingSystems</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ChargeSniperRifle</defaultProjectile>
+        <warmupTime>2.67</warmupTime>
+        <range>44.9</range>
+        <soundCast>VWE_Shot_ChargeSniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
 </Defs>
