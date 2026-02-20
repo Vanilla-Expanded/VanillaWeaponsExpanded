@@ -57,8 +57,7 @@
 				<defaultProjectile>VWE_Bullet_ChargePistol</defaultProjectile>
 				<warmupTime>0.366666</warmupTime>
 				<range>23.9</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>1</burstShotCount>
 				<soundCast>VWE_Shot_ChargePistol</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -617,7 +616,7 @@
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>LaserTargetingSystems</researchPrerequisite>
+      <researchPrerequisite>VWE_LaserTargetingSystems</researchPrerequisite>
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
