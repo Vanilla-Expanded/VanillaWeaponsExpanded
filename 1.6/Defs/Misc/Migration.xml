@@ -6,10 +6,7 @@
 
     <migratedDefs>
       <ThingDef>
-        <!-- Vanilla replacements -->
-        <VWE_Gun_ChargeSniperRifle>
-          <replacement>Gun_ChargeLance</replacement>
-        </VWE_Gun_ChargeSniperRifle>
+       
         <!-- Migrated to Medieval 2 -->
         <VWE_Gun_Musket>
           <replacement>VFEM2_Gun_Musket</replacement>
@@ -30,7 +27,7 @@
         <VWE_WhipSlash />
         <VWE_Gun_FireExtinguisher />
         <VWE_Bullet_FireExtinguisher />
-        <VWE_Bullet_ChargeSniperRifle /> <!-- Don't bother migrating projectiles, only weapon. -->
+       
         <Bullet_Leadball /> <!-- Flintlock/musket projectile -->
       </ThingDef>
       <!-- Research projects still error out due to how they're loaded (dictionary without working lists). -->
