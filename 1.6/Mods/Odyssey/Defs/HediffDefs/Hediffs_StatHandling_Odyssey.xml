@@ -10,9 +10,9 @@
 		<duplicationAllowed>false</duplicationAllowed>
 		<stages>
 			<li>
-				<statFactors>
+				<statOffsets>
 					<HuntingStealth>0.3</HuntingStealth>
-				</statFactors>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
