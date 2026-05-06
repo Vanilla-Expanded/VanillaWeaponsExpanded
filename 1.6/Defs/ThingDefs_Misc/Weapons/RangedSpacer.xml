@@ -239,8 +239,8 @@
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Plasteel>60</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<weaponTags>
 			<li>SpacerGun</li>
